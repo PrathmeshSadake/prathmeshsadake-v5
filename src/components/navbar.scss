@@ -1,0 +1,43 @@
+@import "../utilities/variables";
+
+.mr-auto,
+.mx-auto {
+  margin: 0 !important;
+}
+
+.bg-dark {
+  background-color: transparent !important;
+}
+.navbar-collapse {
+  justify-content: flex-end !important;
+}
+
+.nav-item {
+  margin-top: 1rem;
+  @media (min-width: 992px) {
+    margin-top: 0rem;
+
+    margin-left: 30px;
+    :last-child {
+      margin-left: 0;
+    }
+  }
+}
+.nav-link {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 1rem;
+
+  @media (min-width: 992px) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+.nav-pills .nav-link.active {
+  background-color: transparent;
+  border: 1px solid $color-cyan;
+}
