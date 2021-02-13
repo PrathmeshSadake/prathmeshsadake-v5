@@ -1,4 +1,4 @@
-@import "../utilities/variables";
+@import "../../utilities/variables";
 
 .mr-auto,
 .mx-auto {
@@ -23,9 +23,15 @@
     }
   }
 }
-.nav-link {
+.nav-link a:visited, a:link{
   text-transform: uppercase;
+  color: white;
+  text-decoration: none;
   letter-spacing: 3px;
+  transition: all .3s ease-in;
+  &:hover,:active{
+    color: $color-cyan;
+  }
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -40,4 +46,19 @@
 .nav-pills .nav-link.active {
   background-color: transparent;
   border: 1px solid $color-cyan;
+}
+
+.main-logo {
+  width: 80%;
+  @media (min-width: 420px) {
+    width: 100%;
+
+  }
+  @media (min-width: 992px) {
+  width: 100%;
+  }
+  @media (min-width: 1370px) {
+  width: 120%;
+
+  }
 }
