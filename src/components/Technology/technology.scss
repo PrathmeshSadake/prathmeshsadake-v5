@@ -1,0 +1,16 @@
+@import "../../utilities/variables";
+
+.technology-chip {
+  padding: 6px 15px;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  background-color: $color-blue;
+  border-radius: 50px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: .75px;
+}
+// .technology-name {
+//   font-weight: bold;
+//   vertical-align: middle;
+// }

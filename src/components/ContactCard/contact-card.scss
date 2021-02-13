@@ -1,0 +1,53 @@
+@import "../../utilities/variables";
+
+.contact-card-container {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+  }
+}
+
+.contact-card {
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  letter-spacing: 0.75px;
+  line-height: 125%;
+  .description {
+    font-weight: 600;
+  }
+
+  @media (min-width: 992px) {
+    text-align: left;
+
+    padding: 3rem 3rem;
+  }
+  background-color: $color-blue;
+  color: $color-cyan;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+
+  a:visited,
+  :link {
+    text-transform: uppercase;
+    color: $color-cyan;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 15px 20px;
+    border: 1px solid $color-cyan;
+  }
+  a:hover,
+  a:active {
+    background-color: $color-cyan;
+    color: $color-black;
+  }
+}

@@ -1,0 +1,67 @@
+@import "../../utilities/variables";
+
+.project {
+  min-height: 30vh;
+  padding: 4rem 0;
+  @media (min-width: 992px) {
+    padding: 8rem 0;
+  }
+}
+
+.project-img {
+  overflow: hidden;
+  @media (min-width: 992px) {
+    padding-right: 50px;
+  }
+  img {
+    object-fit: cover;
+  }
+  @media (max-width: 992px) {
+    text-align: center;
+  }
+}
+
+.project-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  @media (max-width: 992px) {
+    align-items: center;
+  }
+}
+.line {
+  height: 0.5px;
+  background-color: aqua;
+  width: 100%;
+}
+
+.line.above {
+  margin-bottom: 1.5rem;
+  @media (max-width: 992px) {
+    margin-top: 1rem;
+  }
+}
+.line.below {
+  margin-top: 1.5rem;
+}
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.btn-project:visited,
+.btn-project:link {
+  text-transform: uppercase;
+  color: $color-cyan;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  padding: 8px 14px;
+  border: 1px solid $color-cyan;
+}
+.btn-project:hover,
+.btn-project:active {
+  background-color: $color-blue;
+  color: $color-cyan;
+}
