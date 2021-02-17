@@ -20,12 +20,13 @@ export default function Projects() {
       githubUrl: "https://www.github.com/PrathmeshSadake/newscast",
     },
     {
-      title: "Animated Introduction",
-      subtitle: "Login and Signup Screen",
-      description: "Animated Login and Signup screen using flutter.",
-      imageUrl: process.env.PUBLIC_URL + "/images/projects/animatedLogin.png",
-      technologies: ["Flutter", "Dart"],
-      githubUrl: "https://www.github.com/PrathmeshSadake/animatedlogin",
+      title: "DevJobs",
+      subtitle: "Jobs searching Flutter application",
+      description:
+        "Jobs searching Flutter application with features like category wise jobs, searching for jobs and there's also a section where user can read business news articles. Each job and news article has a url linked with it so user can open it it there favourite browser. Jobs are listed using Github jobs Api and for the news I have used NewsApi.org.",
+      imageUrl: process.env.PUBLIC_URL + "/images/projects/devjobs.png",
+      technologies: ["Flutter", "Dart", "GitHub jobs Api"],
+      githubUrl: "https://www.github.com/PrathmeshSadake/devjobs",
     },
     {
       title: "Portfolio Website",

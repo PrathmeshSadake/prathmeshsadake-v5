@@ -17,7 +17,7 @@ export default function Project({ project }) {
         </Col>
         <Col md={12} lg={6} className="project-desc">
           <div className="line above"></div>
-          <h4 className="project-title">{project.title}</h4>
+          <h4 className="project-title">{project.title} | {project.subtitle}</h4>
           <p>{project.description}</p>
           <div className="technologies">
             {project.technologies.map((technology) => (
