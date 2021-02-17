@@ -33,7 +33,7 @@ export default function Header() {
             </h2>
             <h2>
               I'm a multi-disciplinary and a design-minded frontend web and
-              mobile app developer.
+              hybrid mobile app developer.
             </h2>
             <Image fluid className="wave" src={waveSvg} />
           </div>
