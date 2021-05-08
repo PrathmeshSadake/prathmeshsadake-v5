@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Image, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import {
   SiFlutter,
   SiReact,
@@ -48,15 +49,10 @@ const About = () => {
               <SiReact size="1.5rem" />
             </div>
           </div>
-          <a
-            href="#"
-            className="btn-ghost"
+          <Link to="/projects" className="btn-ghost"
             data-aos="zoom-out"
             data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            view projects
-          </a>
+            data-aos-delay="500">view projects</Link>
           <div className="line"></div>
 
           <Image fluid className="squiggle" src={aboutBackground} />
