@@ -1,9 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/* App.css */
+
+/* to load animation for a specific spinner */
+@import "~spinners-react/lib/SpinnerDotted.css";
+
+/* to load animations for all spinners at once */
+@import "~spinners-react/lib/index.css";
+@font-face {
+  font-family: "Gladiatore";
+  src: url("/fonts/Gladiatore.otf");
+}
+
+/* Navy	#0a192f
+Light Navy	#112240
+Lightest Navy	#233554
+Slate	#8892b0
+Light Slate	#a8b2d1
+Lightest Slate	#ccd6f6
+White	#e6f1ff
+Green	#64ffda*/
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #0a192f;
+  color: #ccd6f6;
+  letter-spacing: 1px;
 }
 
 a {
@@ -13,4 +38,35 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.hero__heading {
+  font-family: "Gladiatore", "Pacifico", "Poppins", sans-serif;
+  font-size: 10rem;
+  color: #64ffda;
+}
+.hero__description {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #ccd6f6;
+  width: 80%;
+  margin: 0 auto;
+}
+.title {
+  margin-bottom: 2rem;
+}
+
+.important {
+  color: #64ffda;
+}
+
+li {
+  color: #a8b2d1;
+}
+
+li:hover,
+li:active {
+  color: #64ffda;
+  cursor: pointer;
 }
