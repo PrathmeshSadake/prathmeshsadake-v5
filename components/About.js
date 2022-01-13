@@ -1,6 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
+// import Lottie from "react-lottie";
+import Lottie from "react-lottie-player";
+import animationData from "../public/assets/developerAnimation.json";
+
 const About = () => {
   return (
     <Container className="py-5" style={{ maxWidth: "1100px" }}>
@@ -8,24 +12,24 @@ const About = () => {
         <Col sm={7}>
           <h3 className="title">About Me</h3>
           <p>
-            I’m a <span className="important">Full Stack Developer</span>. Being
-            a full-stack allows me to develop client-facing apps and develop
-            them with cutting-edge back-end support.
+            I’m <span className="important">Prathmesh Sadake</span> a{" "}
+            <span className="important">Full Stack Software Engineer</span>. As
+            a Full Stack Engineer, I am able to create client-facing apps while
+            also providing cutting-edge back-end support.
           </p>
           <p>
-            I specialize in building robust backends that do all the heavy
-            lifting for your app or website. I love designing systems that are
-            light yet powerful, distributed yet synchronized and beautiful yet
-            effective. I’d love to combine my passion for learning with my
-            software development skills to continue building personalized
-            products for people.
+            I specialise in creating strong backends that handle all of the
+            heavy lifting for your app or website. I'd like to continue building
+            personalised products for people by combining my passion for
+            learning with my software development skills.
           </p>
           <p>
-            I mainly use <span className="important">MERN</span> stack. As i am
-            a fast learner i can adapt to whatever tools requried
+            I mainly use <span className="important">MERN</span> stack. Because
+            I am a quick learner, I can quickly adapt to whatever tools are
+            required.
           </p>
           <p className="important">
-            Here are a few technologies I’ve been working with recently:
+            Here are a few technologies I've recently worked with:
           </p>
           <Row>
             <Col sm={5}>
@@ -46,7 +50,10 @@ const About = () => {
             </Col>
           </Row>
         </Col>
-        <Col sm={4}>sm=4</Col>
+        <Col sm={5}>
+          {/* <Lottie options={defaultOptions} width={500} /> */}
+          <Lottie loop animationData={animationData} play />
+        </Col>
       </Row>
     </Container>
   );

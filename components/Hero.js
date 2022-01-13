@@ -16,8 +16,8 @@ const Hero = () => {
         <Col sm={12} style={{ textAlign: "center" }}>
           <h1 className="hero__heading">Prathmesh Sadake</h1>
           <p className="hero__description">
-            I specialize in building beautiful client-facing apps and develop
-            them with cutting-edge back-end support.
+            I specialise in developing beautiful client-facing apps with
+            cutting-edge back-end support.
           </p>
         </Col>
       </Row>
