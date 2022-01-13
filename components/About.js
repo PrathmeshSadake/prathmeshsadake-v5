@@ -19,9 +19,9 @@ const About = () => {
           </p>
           <p>
             I specialise in creating strong backends that handle all of the
-            heavy lifting for your app or website. I'd like to continue building
-            personalised products for people by combining my passion for
-            learning with my software development skills.
+            heavy lifting for your app or website. I&apos;d like to continue
+            building personalised products for people by combining my passion
+            for learning with my software development skills.
           </p>
           <p>
             I mainly use <span className="important">MERN</span> stack. Because
@@ -29,7 +29,7 @@ const About = () => {
             required.
           </p>
           <p className="important">
-            Here are a few technologies I've recently worked with:
+            Here are a few technologies I&apos;ve recently worked with:
           </p>
           <Row>
             <Col sm={5}>
