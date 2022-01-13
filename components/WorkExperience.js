@@ -34,7 +34,7 @@ const experiences = [
     endDate: "January 2022",
     tasks: [
       "Translated UI/UX design wireframes into high-quality code that will produce visual elements of the application.",
-      "Improved existing UI of Techsnap's Website.",
+      "Improved existing UI of Techsnap&apos;s Website.",
     ],
     techstack: ["HTML", "CSS", "BOOTSTRAP"],
   },
@@ -120,6 +120,7 @@ const WorkExperience = () => {
                       border: "0.5px solid #64ffda",
                       borderRadius: "5px",
                     }}
+                    key={tech}
                   >
                     {tech}
                   </div>
