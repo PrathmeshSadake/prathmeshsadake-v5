@@ -34,24 +34,23 @@ const About = () => {
           <Row>
             <Col sm={5}>
               <ul>
-                <li>JavaScript</li>
-                <li>ReactJS</li>
-                <li>NextJS</li>
-                <li>NodeJS</li>
+                <li key={1}>JavaScript</li>
+                <li key={2}>ReactJS</li>
+                <li key={3}>NextJS</li>
+                <li key={4}>NodeJS</li>
               </ul>
             </Col>
             <Col sm={6}>
               <ul>
-                <li>ExpressJS</li>
-                <li>MongoDB</li>
-                <li>Firebase</li>
-                <li>React Native</li>
+                <li key={5}>ExpressJS</li>
+                <li key={6}>MongoDB</li>
+                <li key={7}>Firebase</li>
+                <li key={8}>React Native</li>
               </ul>
             </Col>
           </Row>
         </Col>
         <Col sm={5}>
-          {/* <Lottie options={defaultOptions} width={500} /> */}
           <Lottie loop animationData={animationData} play />
         </Col>
       </Row>

@@ -90,9 +90,9 @@ const WorkExperience = () => {
 
       {experiences.map((experience) => {
         return (
-          <Row className="gx-3 my-3 p-2">
+          <Row key={experience.company} className="gx-3 my-3 p-2">
             <Col sm={4} style={{ borderRight: "1px solid #64ffda" }}>
-              <h5 style={{ fontSize: "18px", color: "#ccd6f6" }}>
+              <h5 style={{ fontSize: "20px", color: "#ccd6f6" }}>
                 {experience.company}
               </h5>
               <h6 style={{ color: "#64ffda" }}>{experience.designation}</h6>
@@ -103,7 +103,7 @@ const WorkExperience = () => {
             <Col sm={8}>
               <ul>
                 {experience.tasks.map((task) => (
-                  <li>{task}</li>
+                  <li key={task}>{task}</li>
                 ))}
               </ul>
             </Col>
