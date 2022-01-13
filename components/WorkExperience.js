@@ -51,11 +51,8 @@ const experiences = [
     techstack: [
       "MongoDB",
       "Node.js",
-      "GitHub",
       "Express.js",
-      "REST API",
       "ReactJS",
-      "Stripe Payment API",
       "Redux",
       "Firebase",
       "Materialize",
@@ -77,7 +74,7 @@ const experiences = [
       "Node.js",
       "GitHub",
       "Express.js",
-      "React Native",
+      "ReactNative",
       "AWS",
     ],
   },
@@ -106,6 +103,28 @@ const WorkExperience = () => {
                   <li key={task}>{task}</li>
                 ))}
               </ul>
+              <div
+                style={{
+                  width: "100%",
+                  wordWrap: "normal",
+                  fontSize: "12px",
+                  marginTop: "1rem",
+                  display: "flex",
+                  flexWrap: "wrap",
+                }}
+              >
+                {experience.techstack.map((tech) => (
+                  <div
+                    className="py-1 px-2 me-2"
+                    style={{
+                      border: "0.5px solid #64ffda",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    {tech}
+                  </div>
+                ))}
+              </div>
             </Col>
           </Row>
         );
