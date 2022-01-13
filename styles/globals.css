@@ -26,7 +26,7 @@ body {
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: #0a192f !important;
-  color: #ccd6f6;
+  color: #ccd6f6 !important;
   letter-spacing: 1px;
 }
 
