@@ -3,15 +3,28 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 
 const Contact = () => {
   return (
-    <Container>
+    <Container
+      className="p-5 my-5"
+      style={{
+        backgroundColor: "#233554",
+        maxWidth: "1100px",
+        textAlign: "center",
+      }}
+    >
       <Row>
         <Col>
-          <h3>Get In Touch</h3>
-          <p>
-            My inbox is always open. Whether you have a question or just want to
-            say hi, I’ll try my best to get back to you! I’d love to combine my
-            passion for learning and developing with my software development
-            skills to continue building personalised products for people.
+          <h3
+            style={{
+              fontSize: "3rem",
+              fontWeight: "600",
+              marginBottom: "1rem",
+            }}
+          >
+            Get In Touch 👋
+          </h3>
+          <p style={{ width: "50%", margin: "auto", marginBottom: "2rem" }}>
+            My mailbox is always open. If you have any questions or would like
+            to say hello, I will do our best to answer them!
           </p>
           <Button variant="outline-primary">Say Hello</Button>{" "}
         </Col>
