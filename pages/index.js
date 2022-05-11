@@ -1,3 +1,13 @@
+import Cta from '../components/cta';
+import Hero from '../components/hero';
+import Projects from '../components/projects';
+
 export default function Home() {
-  return <h1 className='text-3xl font-bold underline'>Hello world!</h1>;
+  return (
+    <>
+      <Hero />
+      <Projects />
+      <Cta />
+    </>
+  );
 }
