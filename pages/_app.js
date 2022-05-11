@@ -1,30 +1,7 @@
-import SSRProvider from "react-bootstrap/SSRProvider";
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-
-import "../styles/globals.css";
-import Loader from "../components/Loader";
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
-  const [loading, setLoading] = React.useState(true);
-
-  React.useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 3500);
-  }, []);
-
-  return (
-    <SSRProvider>
-      {!loading ? (
-        <React.Fragment>
-          <Component {...pageProps} />
-        </React.Fragment>
-      ) : (
-        <Loader />
-      )}
-    </SSRProvider>
-  );
+  return <Component {...pageProps} />
 }
 
-export default MyApp;
+export default MyApp
