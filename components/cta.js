@@ -2,23 +2,23 @@ import React from 'react';
 
 const Cta = () => {
   return (
-    <div className='mx-auto container flex justify-center items-center py-4'>
-      <div className='flex flex-col lg:flex-row justify-center items-center space-y-6 lg:space-y-0'>
-        <div className='w-80 sm:w-auto flex flex-col justify-start items-start'>
+    <div className='mx-auto container'>
+      <div class='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-5 gap-10'>
+        <div className='lg:col-span-2 sm:w-auto flex flex-col justify-center items-start'>
           <div>
             <p className='text-3xl xl:text-4xl font-semibold leading-9 text-gray-800'>
-              Renovate your home
+              I have a Blog.
             </p>
           </div>
           <div className='mt-4 lg:w-4/5 xl:w-3/5'>
             <p className='text-base leading-6 text-gray-600'>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
+              Your Technical Knowledge Needs to get stronger and I have the
+              ideas ready!
             </p>
           </div>
-          <div className='mt-16 w-full'>
-            <button className='px-4 bg-gray-900 flex justify-between items-center w-full lg:w-72 h-14 text-white hover:bg-gray-700'>
-              <p className='text-xl font-medium leading-5'>See More</p>
+          <div className='mt-6 w-full'>
+            <button className='px-4 bg-gray-900 flex justify-between items-center w-full lg:w-72 h-12 text-white hover:bg-gray-700'>
+              <p className='text-lg font-medium leading-5'>Visit my blog</p>
               <svg
                 width='32'
                 height='32'
@@ -51,44 +51,30 @@ const Cta = () => {
             </button>
           </div>
         </div>
-
-        <div className='flex flex-col sm:flex-row jusitfy-center items-center sm:space-x-5 xl:space-x-8 space-y-4 sm:space-y-0'>
-          <div>
-            <img
-              className='hidden lg:block'
-              src='https://i.ibb.co/61TfVVW/olena-sergienko-gx-KL334b-UK4-unsplash-1.png'
-              alt='sofa'
-            />
-            <img
-              className='w-80 sm:w-auto lg:hidden'
-              src='https://i.ibb.co/QvxmJjB/olena-sergienko-gx-KL334b-UK4-unsplash-1-1.png'
-              alt='sofa'
-            />
-          </div>
-          <div className='flex flex-col justify-center items-center space-y-4 sm:space-y-0 sm:space-y-5 lg:space-y-5 xl:space-y-8'>
-            <div>
+        <div className='lg:col-span-3  w-full'>
+          <div class='grid grid-cols-2 grid-row-2 gap-x-1'>
+            <div className='row-span-2'>
               <img
-                className='hidden lg:block'
-                src='https://i.ibb.co/1MY5P3y/nirzar-pangarkar-Csw-Kf-D546-Z8-unsplash-1.png'
-                alt='chairs'
-              />
-              <img
-                className='w-80 sm:w-auto lg:hidden'
-                src='https://i.ibb.co/r0rvcCh/behzad-ghaffarian-nh-Wg-ZNV85-LQ-unsplash-1-1-1.png'
-                alt='chairs'
+                className='w-full h-full object-cover'
+                src='https://source.unsplash.com/JO_S6ewBqAk'
+                alt='laptop'
               />
             </div>
-            <div>
-              <img
-                className='hidden lg:block'
-                src='https://i.ibb.co/9N7ZX2C/behzad-ghaffarian-nh-Wg-ZNV85-LQ-unsplash-1-1.png'
-                alt='chairs'
-              />
-              <img
-                className='w-80 sm:w-auto lg:hidden'
-                src='https://i.ibb.co/0BFt400/nirzar-pangarkar-Csw-Kf-D546-Z8-unsplash-2.png'
-                alt='chairs'
-              />
+            <div className='grid grid-row-2 gap-y-1'>
+              <div>
+                <img
+                  className='w-full h-full object-cover'
+                  src='https://source.unsplash.com/oyXis2kALVg'
+                  alt='laptop'
+                />
+              </div>
+              <div>
+                <img
+                  className='w-full h-full object-cover'
+                  src='https://source.unsplash.com/2EJCSULRwC8'
+                  alt='laptop'
+                />
+              </div>
             </div>
           </div>
         </div>

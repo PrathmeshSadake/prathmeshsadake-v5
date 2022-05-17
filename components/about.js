@@ -1,18 +1,11 @@
 import React, { useState } from 'react';
 
 const About = () => {
-  const [show, setShow] = useState(false);
-  const [show2, setShow2] = useState(false);
-
   return (
     <div class='2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto'>
       <div class='grid grid-cols-1 md:grid-cols-2 gap-4'>
         <div className=''>
-          <img
-            className='w-full'
-            alt='img of a girl posing'
-            src='https://i.ibb.co/QMdWfzX/component-image-one.png'
-          />
+          <img className='w-full' alt='MERN' src='assets/mern_hero.png' />
         </div>
         <div className='lg:ml-8 md:ml-6 md:mt-0 mt-6'>
           <div className='border-b border-gray-200 pb-6'>
