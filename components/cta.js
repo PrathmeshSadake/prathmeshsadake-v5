@@ -2,7 +2,7 @@ import React from 'react';
 
 const Cta = () => {
   return (
-    <div className='mx-auto container flex justify-center items-center py-12 px-4 sm:px-6 2xl:px-0'>
+    <div className='mx-auto container flex justify-center items-center py-4'>
       <div className='flex flex-col lg:flex-row justify-center items-center space-y-6 lg:space-y-0'>
         <div className='w-80 sm:w-auto flex flex-col justify-start items-start'>
           <div>
