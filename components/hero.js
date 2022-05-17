@@ -1,51 +1,79 @@
 import React from 'react';
 
-const Hero3 = () => {
+const Hero8 = () => {
   return (
-    <div className='container mx-auto py-9 md:py-12 lg:py-24'>
-      <div className='relative'>
-        <img
-          src='https://i.ibb.co/q5k5j57/bench-accounting-nvzv-OPQW0gc-unsplash-1-1.png'
-          alt='A work table with house plants'
-          className='w-full h-full hidden lg:block'
-        />
-        <img
-          src='https://i.ibb.co/94jQFsV/bench-accounting-nvzv-OPQW0gc-unsplash-1-1.png'
-          alt='A work table with house plants'
-          className='hidden sm:block lg:hidden w-full h-full'
-        />
-        <img
-          src='https://i.ibb.co/cJz8LZ2/bench-accounting-nvzv-OPQW0gc-unsplash-1-1.png'
-          alt='A work table with house plants'
-          className='sm:hidden w-full h-full'
-        />
-
-        <div className='absolute z-10 top-0 left-0 mx-4 sm:mx-0 mt-16 sm:mt-0 sm:py-20 md:py-28 lg:py-20 sm:pl-14 flex flex-col sm:justify-start items-start'>
-          <p className='text-2xl leading-normal text-gray-800 mt-4 sm:my-5 sm:w-5/12'>
-            {' '}
-            Hi, my name is
+    <div className='flex flex-col lg:flex-row items-stretch justify-between lg:px-0 px-6 lg:py-20 py-8 2xl:mx-auto 2xl:container'>
+      <div className='z-30 relative lg:w-1/2'>
+        <div className='hidden bg-gray-100 w-full lg:w-10/12 lg:h-full lg:flex justify-end items-center'>
+          <div className='w-full lg:w-auto lg:-mr-32'>
+            <img
+              src='https://i.ibb.co/YQjkqWr/juan-burgos-FIy-XGZ1q0mc-unsplash-1.png'
+              alt='image with decent chairs'
+              className='w-full relative z-30 lg:pl-20 px-6 py-14'
+            />
+          </div>
+        </div>
+        <div className='absolute top-0 bg-gray-100 md:h-96 w-full hidden md:block lg:hidden'></div>
+        <div className='w-full h-full lg:hidden'>
+          <img
+            src='https://i.ibb.co/YQjkqWr/juan-burgos-FIy-XGZ1q0mc-unsplash-1.png'
+            alt='image with decent chairs'
+            className='w-full relative z-30 lg:pl-20 md:px-6 py-5 md:py-14'
+          />
+        </div>
+      </div>
+      <div className='bg-gray-100 lg:w-1/2 lg:ml-12 lg:p-14 p-8 flex items-center'>
+        <div>
+          <p className=' md:w-9/12 lg:w-11/12 xl:w-10/12 2xl:9/12 text-base leading-normal text-gray-600 mt-2'>
+            Hello 👋, my name is
           </p>
-
-          <h1 className='text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-800'>
+          <h1 className=' md:w-8/12 lg:w-10/12 xl:8/12 2xl:w-8/12 w-full sm:text-5xl text-4xl font-semibold text-gray-800 capitalize'>
             Prathmesh Sadake
           </h1>
-          <h1 className='text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-800'>
-            I'm a full-stack developer.
-          </h1>
-          {/* <p className='text-base leading-normal text-gray-800 mt-4 sm:mt-5 sm:w-5/12'>
-            As a full-stack developer, I can create client-facing apps and
+
+          <p className='md:w-9/12 lg:w-11/12 xl:w-10/12 2xl:9/12 text-2xl leading-normal text-gray-600 mt-2'>
+            Developing Apps that are made to Impress.
+          </p>
+          <p className='md:w-9/12 lg:w-11/12 xl:w-10/12 2xl:9/12 text-base leading-normal text-gray-600 mt-5'>
+            I'm a full-stack engineer. I can create client-facing apps and
             websites with cutting-edge back-end support.
-          </p> */}
-          <button className='hidden sm:flex bg-gray-800 py-4 px-8 text-base font-medium text-white mt-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700'>
-            About me
+          </p>
+          <button className='sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center'>
+            Explore about me
+            <div className='ml-2 mt-0.5'>
+              <svg
+                className='fill-stroke'
+                width='16'
+                height='16'
+                viewBox='0 0 16 16'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  d='M3.33325 8H12.6666'
+                  stroke='currentColor'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                />
+                <path
+                  d='M10 10.6667L12.6667 8'
+                  stroke='currentColor'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                />
+                <path
+                  d='M10 5.33301L12.6667 7.99967'
+                  stroke='currentColor'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                />
+              </svg>
+            </div>
           </button>
         </div>
-        <button className='absolute bottom-0 sm:hidden bg-gray-800 py-4 text-base font-medium text-white mt-8 flex justify-center items-center w-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700'>
-          About me
-        </button>
       </div>
     </div>
   );
 };
 
-export default Hero3;
+export default Hero8;
