@@ -29,21 +29,22 @@ const About = () => {
           </div>
           <div>
             <p className='text-base lg:leading-tight leading-normal text-gray-600 mt-3'>
-              My name is Prathmesh Sadake. I'm a full-stack engineer. As a
+              My name is Prathmesh Sadake. I&apos;m a full-stack engineer. As a
               full-stack developer, I can create client-facing apps and websites
               with cutting-edge back-end support. I usually use the MERN stack,
-              but I'm flexible enough to utilize whatever tools are required.
+              but I&apos;m flexible enough to utilize whatever tools are
+              required.
             </p>
             <p className='text-base lg:leading-tight leading-normal text-gray-600 mt-3'>
               I specialize in creating solid backends for your app or website
               that handle all of the heavy liftings. I enjoy creating systems
               that are both light and powerful, distributed yet coordinated, and
-              beautiful yet functional. I'd like to continue producing
+              beautiful yet functional. I&apos;d like to continue producing
               individualized goods for people by combining my passion for
               learning with my software development talents.
             </p>{' '}
             <p className='text-base lg:leading-tight leading-normal text-gray-600 mt-3'>
-              When I'm not working, I like to spend time reading books,
+              When I&apos;m not working, I like to spend time reading books,
               listening audiobooks or podcasts, learning to code or tinkering
               with new apps and tools.
             </p>

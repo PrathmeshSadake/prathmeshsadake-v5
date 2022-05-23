@@ -52,7 +52,7 @@ const data = [
 ];
 
 const PastExperience = () => (
-  <div classname='overflow-y-hidden bg-gray-100'>
+  <div className='overflow-y-hidden bg-gray-100'>
     <div className='mx-auto container f-f-p px-4 xl:px-0 py-24'>
       <h1 className='focus:outline-none text-center text-3xl font-semibold lg:leading-9 tracking-wider text-gray-900 border-b border-gray-200 pb-6'>
         Work Experience
