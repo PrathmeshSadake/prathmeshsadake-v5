@@ -13,12 +13,17 @@ function Footer() {
                 <a
                   href='https://www.linkedin.com/in/prathmeshsadake/'
                   target='_blank'
+                  rel='noreferrer'
                 >
                   Linkedin
                 </a>
               </h2>
               <h2 className='cursor-pointer'>
-                <a href='https://github.com/PrathmeshSadake' target='_blank'>
+                <a
+                  href='https://github.com/PrathmeshSadake'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   Github
                 </a>
               </h2>
@@ -27,7 +32,11 @@ function Footer() {
               <ul className='md:flex items-center'>
                 <li className=' md:mr-6 cursor-pointer pt-4 lg:py-0'>About</li>
                 <li className=' md:mr-6 cursor-pointer pt-4 lg:py-0'>
-                  <a href='https://github.com/PrathmeshSadake' target='_blank'>
+                  <a
+                    href='https://github.com/PrathmeshSadake'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     Projects
                   </a>
                 </li>

@@ -57,9 +57,12 @@ const PastExperience = () => (
       <h1 className='focus:outline-none text-center text-3xl font-semibold lg:leading-9 tracking-wider text-gray-900 border-b border-gray-200 pb-6'>
         Work Experience
       </h1>
-      <div class='grid grid-cols-2 gap-2 my-8'>
+      <div className='grid grid-cols-2 gap-2 my-8'>
         {data.map((ex) => (
-          <div className='p-5 flex justify-between rounded bg-gray-100 '>
+          <div
+            className='p-5 flex justify-between rounded bg-gray-100 '
+            key={ex.org}
+          >
             <div className='w-3/5'>
               <p className='text-sm font-bold text-gray-800 '>{ex.profile}</p>
               <p className='mb-2 text-sm font-semibold text-gray-700 '>
@@ -67,7 +70,9 @@ const PastExperience = () => (
               </p>
               <ul>
                 {ex.tasks.map((task) => (
-                  <li className='mb-2 text-xs text-gray-600'>- {task}</li>
+                  <li className='mb-2 text-xs text-gray-600' key={task}>
+                    - {task}
+                  </li>
                 ))}
               </ul>
             </div>

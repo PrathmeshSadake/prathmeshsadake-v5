@@ -35,7 +35,7 @@ const Hero8 = () => {
             Developing Apps that are made to Impress.
           </p>
           <p className='md:w-9/12 lg:w-11/12 xl:w-10/12 2xl:9/12 text-base leading-normal text-gray-600 mt-5'>
-            I'm a full-stack engineer. I can create client-facing apps and
+            I&apos;m a full-stack engineer. I can create client-facing apps and
             websites with cutting-edge back-end support.
           </p>
           <button className='sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center'>

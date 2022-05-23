@@ -55,6 +55,7 @@ const Nav = () => {
                 <a
                   href='https://drive.google.com/file/d/1Tpabb4ja52JgVvdcbdw8N-Jd2ZDx-3Pd/view?usp=sharing'
                   target='_blank'
+                  rel='noreferrer'
                 >
                   Resume
                 </a>

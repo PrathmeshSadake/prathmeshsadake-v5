@@ -10,7 +10,7 @@ const Projects = () => {
           </h3>
           <p className='text-base leading-normal text-center text-gray-600 mt-4 lg:w-1/2 md:w-10/12 w-11/12'>
             I usually use the MERN stack or Machine Learning for my projects,
-            but I'm flexible enough to utilize whatever tools are required.
+            but I&apos;m flexible enough to utilize whatever tools are required.
           </p>
         </div>
         <div className='lg:flex items-stretch md:mt-12 mt-8'>

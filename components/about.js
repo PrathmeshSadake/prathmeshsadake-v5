@@ -4,9 +4,9 @@ const About = () => {
   return (
     <div
       id='about'
-      class='2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto'
+      className='2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto'
     >
-      <div class='grid grid-cols-1 md:grid-cols-2 gap-4'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
         <div className=''>
           <img className='w-full' alt='MERN' src='assets/mern_hero.png' />
         </div>

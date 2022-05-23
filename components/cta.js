@@ -3,7 +3,7 @@ import React from 'react';
 const Cta = () => {
   return (
     <div className='mx-auto container'>
-      <div class='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-5 gap-10'>
+      <div className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-5 gap-10'>
         <div className='lg:col-span-2 sm:w-auto flex flex-col justify-center items-start'>
           <div>
             <p className='text-3xl xl:text-4xl font-semibold leading-9 text-gray-800'>
@@ -52,7 +52,7 @@ const Cta = () => {
           </div>
         </div>
         <div className='lg:col-span-3  w-full'>
-          <div class='grid grid-cols-2 grid-row-2 gap-x-1'>
+          <div className='grid grid-cols-2 grid-row-2 gap-x-1'>
             <div className='row-span-2'>
               <img
                 className='w-full h-full object-cover'

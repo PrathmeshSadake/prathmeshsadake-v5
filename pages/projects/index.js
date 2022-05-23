@@ -7,9 +7,9 @@ const ProjectsPage = () => {
       <h3 className='text-4xl font-semibold leading-9 mt-3 mb-12 text-gray-800'>
         Projects
       </h3>
-      <div class='grid grid-cols-1 md:grid-cols-2 gap-10'>
-        {[1, 2, 3, 4].map(() => (
-          <div className='relative'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
+        {[1, 2, 3, 4].map((el) => (
+          <div className='relative' key={el}>
             <div>
               <p className='md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0'>
                 12 April 2021
