@@ -43,14 +43,22 @@ const Nav = () => {
             </button>
             <ul className='flex text-3xl md:text-base items-center py-8 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0 bg-white md:bg-transparent  z-20'>
               <li className='text-gray-600 text-lg hover:text-gray-800 cursor-pointer md:ml-10 pt-10 md:pt-0'>
-                <a href='javascript:void(0)'>About</a>
+                <a href='#about'>About</a>
               </li>
-              <li className='text-gray-600 text-lg hover:text-gray-800 cursor-pointer md:ml-10 pt-10 md:pt-0'>
+              {/* <li className='text-gray-600 text-lg hover:text-gray-800 cursor-pointer md:ml-10 pt-10 md:pt-0'>
                 <a href='javascript:void(0)'>Projects</a>
               </li>
               <li className='text-gray-600 text-lg hover:text-gray-800 cursor-pointer md:ml-10 pt-10 md:pt-0'>
                 <a href='javascript:void(0)'>Blogs</a>
-              </li>
+              </li> */}
+              <button className='md:ml-10 bg-white transition duration-150 ease-in-out hover:border-indigo-600 hover:text-indigo-600 rounded border border-indigo-700 text-indigo-700 px-6 py-2 text-xs'>
+                <a
+                  href='https://drive.google.com/file/d/1Tpabb4ja52JgVvdcbdw8N-Jd2ZDx-3Pd/view?usp=sharing'
+                  target='_blank'
+                >
+                  Resume
+                </a>
+              </button>
             </ul>
           </div>
         </div>

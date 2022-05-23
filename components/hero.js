@@ -7,8 +7,8 @@ const Hero8 = () => {
         <div className='hidden bg-gray-100 w-full lg:w-10/12 lg:h-full lg:flex justify-end items-center'>
           <div className='w-full lg:w-auto lg:-mr-32'>
             <img
-              src='https://i.ibb.co/YQjkqWr/juan-burgos-FIy-XGZ1q0mc-unsplash-1.png'
-              alt='image with decent chairs'
+              src='https://source.unsplash.com/JdoofvUDUwc'
+              alt='mobile image with developer text'
               className='w-full relative z-30 lg:pl-20 px-6 py-14'
             />
           </div>
@@ -16,8 +16,8 @@ const Hero8 = () => {
         <div className='absolute top-0 bg-gray-100 md:h-96 w-full hidden md:block lg:hidden'></div>
         <div className='w-full h-full lg:hidden'>
           <img
-            src='https://i.ibb.co/YQjkqWr/juan-burgos-FIy-XGZ1q0mc-unsplash-1.png'
-            alt='image with decent chairs'
+            src='https://source.unsplash.com/JdoofvUDUwc'
+            alt='mobile image with developer text'
             className='w-full relative z-30 lg:pl-20 md:px-6 py-5 md:py-14'
           />
         </div>
@@ -39,7 +39,7 @@ const Hero8 = () => {
             websites with cutting-edge back-end support.
           </p>
           <button className='sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center'>
-            Explore about me
+            <a href='#about'>Explore about me</a>
             <div className='ml-2 mt-0.5'>
               <svg
                 className='fill-stroke'

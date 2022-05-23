@@ -9,18 +9,31 @@ function Footer() {
               Developing Apps that are made to Impress
             </h1>
             <div className='md:flex items-center mt-5 text-base text-color f-f-l'>
-              <h2 className=' md:mr-6 pb-4 md:py-0 cursor-pointer'>Linkedin</h2>
-              <h2 className='cursor-pointer'>Github</h2>
+              <h2 className=' md:mr-6 pb-4 md:py-0 cursor-pointer'>
+                <a
+                  href='https://www.linkedin.com/in/prathmeshsadake/'
+                  target='_blank'
+                >
+                  Linkedin
+                </a>
+              </h2>
+              <h2 className='cursor-pointer'>
+                <a href='https://github.com/PrathmeshSadake' target='_blank'>
+                  Github
+                </a>
+              </h2>
             </div>
             <div className='my-6 text-base text-color f-f-l'>
               <ul className='md:flex items-center'>
                 <li className=' md:mr-6 cursor-pointer pt-4 lg:py-0'>About</li>
                 <li className=' md:mr-6 cursor-pointer pt-4 lg:py-0'>
-                  Projects
+                  <a href='https://github.com/PrathmeshSadake' target='_blank'>
+                    Projects
+                  </a>
                 </li>
-                <li className=' md:mr-6 cursor-pointer pt-4 lg:py-0'>Blogs</li>
+                {/* <li className=' md:mr-6 cursor-pointer pt-4 lg:py-0'>Blogs</li> */}
                 <li className=' md:mr-6 cursor-pointer pt-4 lg:py-0'>
-                  Contact
+                  <a href='mailto:prathmeshsadake@gmail.com'>Contact</a>
                 </li>
               </ul>
             </div>
