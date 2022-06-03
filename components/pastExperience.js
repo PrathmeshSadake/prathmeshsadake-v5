@@ -52,7 +52,7 @@ const data = [
 ];
 
 const PastExperience = () => (
-  <div className='overflow-y-hidden bg-gray-100'>
+  <div className='overflow-y-hidden bg-primary'>
     <div className='mx-auto container f-f-p px-4 xl:px-0 py-24'>
       <h1 className='focus:outline-none text-center text-3xl font-semibold lg:leading-9 tracking-wider text-gray-900 border-b border-gray-200 pb-6'>
         Work Experience
@@ -60,7 +60,7 @@ const PastExperience = () => (
       <div className='grid grid-cols-2 gap-2 my-8'>
         {data.map((ex) => (
           <div
-            className='p-5 flex justify-between rounded bg-gray-100 '
+            className='p-5 flex justify-between rounded bg-primary '
             key={ex.org}
           >
             <div className='w-3/5'>

@@ -2,16 +2,26 @@ import React, { useState } from 'react';
 
 const About = () => {
   return (
-    <div
-      id='about'
-      className='2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto'
-    >
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-        <div className=''>
-          <img className='w-full' alt='MERN' src='assets/mern_hero.png' />
+    <div className='bg-white 2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-3'>
+        <div className='col-span-1 flex flex-col justify-center'>
+          <p className='leading-none text-gray-600 text-xl'>About me</p>
+          <h1
+            className='
+							lg:text-4xl
+							text-2xl
+							font-semibold
+							lg:leading-6
+							leading-7
+							text-gray-800
+							mt-2
+						'
+          >
+            Glad to see you here!
+          </h1>
         </div>
-        <div className='lg:ml-8 md:ml-6 md:mt-0 mt-6'>
-          <div className='border-b border-gray-200 pb-6'>
+        <div className='col-span-2'>
+          {/* <div className='border-b border-gray-200 pb-6'>
             <p className='text-sm leading-none text-gray-600'>About me</p>
             <h1
               className='
@@ -26,7 +36,7 @@ const About = () => {
             >
               Glad to see you here!
             </h1>
-          </div>
+          </div> */}
           <div>
             <p className='text-base lg:leading-tight leading-normal text-gray-600 mt-3'>
               My name is Prathmesh Sadake. I&apos;m a full-stack engineer. As a

@@ -9,15 +9,15 @@ export default function Home() {
     <>
       <Hero />
       <About />
-      <PastExperience />
+      {/* <PastExperience /> */}
 
-      <div className='mx-auto container'>
+      {/* <div className='mx-auto container'>
         <h1 className='focus:outline-none text-center text-3xl font-semibold lg:leading-9 tracking-wider text-gray-900'>
           Projects and Blogs Section Coming Soon!
         </h1>
-      </div>
+      </div> */}
       {/* <Projects /> */}
-      {/* <Cta /> */}
+      <Cta />
     </>
   );
 }
