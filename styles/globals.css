@@ -7,5 +7,9 @@
   padding: 0%;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #011214;
+  color: #fff;
+  font-smooth: antialiased;
+  scroll-behavior: smooth;
 }
