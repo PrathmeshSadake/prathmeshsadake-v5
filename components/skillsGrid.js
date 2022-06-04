@@ -11,8 +11,8 @@ const SkillsGrid = () => {
               Software Engineering
             </p>
             <p className='text-gray-400 my-4 font-extralight'>
-              I am a full-stack engineer. I usually use the MERN stack, but I'm
-              flexible enough to utilize whatever tools are required.
+              I&apos;m a full-stack engineer. I usually use the MERN stack, but
+              I&apos;m flexible enough to utilize whatever tools are required.
             </p>
           </div>
           <div className='sm:border-secondary sm:border-b-2'>

@@ -67,6 +67,7 @@ const PastExperience = () => {
         <div className='col-span-2'>
           {data.map((ex, idx) => (
             <div
+              key={ex.org}
               style={{
                 backgroundColor: ` ${
                   currentEx === ex ? '#04AB5C' : 'transparent'
@@ -95,7 +96,9 @@ const PastExperience = () => {
           </p>
           <ul className='list-disc'>
             {currentEx.tasks.map((task) => (
-              <li className='text-sm text-gray-300 my-1'>{task}</li>
+              <li key={task} className='text-sm text-gray-300 my-1'>
+                {task}
+              </li>
             ))}
           </ul>
         </div>
