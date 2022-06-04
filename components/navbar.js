@@ -66,7 +66,7 @@ export default function IndexPage() {
               </li>
               <li
                 className='flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center'
-                onClick='dropdownHandler(this)'
+                onClick={() => {}}
               >
                 <div className='flex items-center'>
                   <span className='ml-2 font-bold'>Experience</span>
@@ -77,7 +77,7 @@ export default function IndexPage() {
               </li>
               <li
                 className='border-b border-gray-300 flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center'
-                onClick='dropdownHandler(this)'
+                onClick={() => {}}
               >
                 <div className='flex items-center'>
                   <span className='ml-2 font-bold'>Contact</span>
