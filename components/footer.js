@@ -1,27 +1,24 @@
 import React from 'react';
 function Footer() {
   return (
-    <div className='py-8 pt-12 mx-auto container'>
-      <div className='grid grid-cols-7 gap-4'>
+    <div className='md:py-8 md:pt-12 mx-auto container p-5 md:p-0'>
+      <div className='grid grid-cols-1 lg:grid-cols-7 gap-4'>
         <div className='col-span-3 text-white flex flex-col md:items-start'>
-          <p className='text-3xl font-light flex items-center'>
-            Get in touch
-          </p>
-          <p className='text-sm font-light w-3/4 my-3'>
+          <p className='text-3xl font-light flex items-center'>Get in touch</p>
+          <p className='text-sm font-light w-3/4 my-3 text-gray-300'>
             My inbox is always open. Whether you have a question or just want to
-            say hi, I’ll try my best to get back to you!
+            say hi, I&#39;ll try my best to get back to you!
           </p>
           <a
             href='mailto:prathmeshsadake@gmail.com'
-            style={{ borderBottom: '1px dotted' }}
-            className='text-xl font-medium mt-3 text-secondary border-secondary'
+            className='text-xl font-medium mt-3 text-secondary border-secondary lg:border-b-secondary'
           >
             prathmeshsadake@gmail.com
           </a>
         </div>
-        <div className='col-span-2 text-base text-gray-200'>
-          <ul className='md:flex flex-col items-start'>
-            <li className='cursor-pointer hover:text-secondary transition ease-in-out'>
+        <div className='col-span-2 text-base text-gray-300'>
+          <ul className='grid grid-cols-2 md:flex flex-col items-start'>
+            <li className='cursor-pointer hover:text-secondary transition ease-in-out pt-5'>
               About
             </li>
             <li className='cursor-pointer hover:text-secondary transition ease-in-out pt-5'>
@@ -41,9 +38,9 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className='col-span-2 text-base text-gray-200'>
-          <ul className='md:flex flex-col items-start'>
-            <li className='cursor-pointer hover:text-secondary transition ease-in-out'>
+        <div className='col-span-2 text-base text-gray-300'>
+          <ul className='grid grid-cols-2 md:flex flex-col items-start'>
+            <li className='cursor-pointer hover:text-secondary transition ease-in-out pt-5'>
               <a
                 href='https://www.linkedin.com/in/prathmeshsadake/'
                 target='_blank'

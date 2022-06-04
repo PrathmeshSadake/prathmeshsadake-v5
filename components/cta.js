@@ -3,7 +3,7 @@ import React from 'react';
 const Cta = () => {
   return (
     <div className='bg-white py-10'>
-      <div className='container mx-auto'>
+      <div className='container p-5 md:p-0 mx-auto'>
         <div className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-5 gap-10'>
           <div className='lg:col-span-2 sm:w-auto flex flex-col justify-center items-start'>
             <div>

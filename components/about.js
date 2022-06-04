@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 const About = () => {
   return (
-    <div className='bg-white 2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto'>
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-3'>
+    <div className='bg-white py-9'>
+      <div className='container p-5 md:p-0 mx-auto grid grid-cols-1 md:grid-cols-3 gap-3 '>
         <div className='col-span-1 flex flex-col justify-center'>
           <p className='leading-none text-gray-600 text-xl'>About me</p>
           <h1
@@ -17,7 +17,7 @@ const About = () => {
 							mt-3
 						'
           >
-            Glad to see you here <span className='text-secondary'>!</span>
+            Glad to see you here !
           </h1>
         </div>
         <div className='col-span-2'>

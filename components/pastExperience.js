@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const data = [
   {
@@ -11,18 +11,7 @@ const data = [
     ],
   },
   {
-    profile: 'Full Stack Developer',
-    org: 'fintapp.in',
-    date: 'Jan 2022',
-    tasks: [
-      'Working on backend development',
-      'Writing clean and understandable code',
-      'Working with Cross-platform app development using React Native',
-      'Understanding the already present codebase',
-    ],
-  },
-  {
-    profile: 'MERN Stack Developer',
+    profile: 'Frontend Developer',
     org: 'Techsnap',
     date: 'Jan 2022',
     tasks: [
@@ -47,47 +36,71 @@ const data = [
     tasks: [
       'Improved existing UI of Web Application.',
       'Assisted with writing content for the descriptive elements of the website.',
+      'Translated UI/UX design wireframes into high-quality code that will produce visual elements of the application.',
     ],
   },
 ];
 
-const PastExperience = () => (
-  <div className='overflow-y-hidden bg-primary'>
-    <div className='mx-auto container f-f-p px-4 xl:px-0 py-24'>
-      <h1 className='focus:outline-none text-center text-3xl font-semibold lg:leading-9 tracking-wider text-gray-900 border-b border-gray-200 pb-6'>
+const PastExperience = () => {
+  const [currentEx, setCurrentEx] = useState(data[0]);
+
+  return (
+    <div className='bg-primary py-5'>
+      <h3
+        className='
+							lg:text-4xl
+							text-xl
+							font-extralight
+							lg:leading-6
+							leading-7
+							text-secondary
+							my-10
+              text-center
+						'
+      >
         Work Experience
-      </h1>
-      <div className='grid grid-cols-2 gap-2 my-8'>
-        {data.map((ex) => (
-          <div
-            className='p-5 flex justify-between rounded bg-primary '
-            key={ex.org}
-          >
-            <div className='w-3/5'>
-              <p className='text-sm font-bold text-gray-800 '>{ex.profile}</p>
-              <p className='mb-2 text-sm font-semibold text-gray-700 '>
-                {ex.org}
-              </p>
-              <ul>
-                {ex.tasks.map((task) => (
-                  <li className='mb-2 text-xs text-gray-600' key={task}>
-                    - {task}
-                  </li>
-                ))}
-              </ul>
+      </h3>
+      <div
+        className='container p-5 md:p-0 max-w-4xl mx-auto grid grid-cols-5 py-5'
+        style={{ minHeight: '250px' }}
+      >
+        <div className='col-span-2'>
+          {data.map((ex, idx) => (
+            <div
+              style={{
+                backgroundColor: ` ${
+                  currentEx === ex ? '#04AB5C' : 'transparent'
+                }`,
+                maxWidth: '80%',
+                wordWrap: 'normal',
+              }}
+              className={`cursor-pointer p-2 mb-2 ${
+                currentEx === ex
+                  ? 'text-white border-l-4 border-secondary'
+                  : 'text-secondary'
+              }`}
+              onClick={() => setCurrentEx(ex)}
+            >
+              {idx + 1}. {ex.org}
             </div>
-            <div className='w-3/12 flex flex-col items-end justify-between'>
-              <p className='text-xs text-gray-600'>{ex.date}</p>
-              <div className='bg-gray-200 h-6 w-20 mb-4 md:mb-0 rounded-md flex items-center justify-center'>
-                <span className='text-xs text-gray-600 font-normal'>
-                  Internship
-                </span>
-              </div>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <div className='col-span-3'>
+          <p className='text-lg'>
+            {currentEx.profile} @{' '}
+            <span className='text-secondary'>{currentEx.org}</span>
+          </p>
+          <p className='text-xs lg:leading-tight leading-normal text-gray-400 mb-3'>
+            {currentEx.date}
+          </p>
+          <ul className='list-disc'>
+            {currentEx.tasks.map((task) => (
+              <li className='text-sm text-gray-300 my-1'>{task}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 export default PastExperience;
