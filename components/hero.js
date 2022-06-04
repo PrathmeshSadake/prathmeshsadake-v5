@@ -6,7 +6,7 @@ const Hero = () => {
     <div className='min-h-screen grid grid-cols-1 md:grid-cols-2 lg:px-0 px-6 2xl:mx-auto 2xl:container z-10'>
       <div className='relative'>
         <svg
-          class='banner-shape has-anim anim-delay-1 visible'
+          className='banner-shape has-anim anim-delay-1 visible'
           style={{
             position: 'absolute',
             top: '0%',

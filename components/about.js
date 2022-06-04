@@ -14,38 +14,22 @@ const About = () => {
 							lg:leading-6
 							leading-7
 							text-gray-800
-							mt-2
+							mt-3
 						'
           >
-            Glad to see you here!
+            Glad to see you here <span className='text-secondary'>!</span>
           </h1>
         </div>
         <div className='col-span-2'>
-          {/* <div className='border-b border-gray-200 pb-6'>
-            <p className='text-sm leading-none text-gray-600'>About me</p>
-            <h1
-              className='
-							lg:text-2xl
-							text-xl
-							font-semibold
-							lg:leading-6
-							leading-7
-							text-gray-800
-							mt-2
-						'
-            >
-              Glad to see you here!
-            </h1>
-          </div> */}
           <div>
-            <p className='text-base lg:leading-tight leading-normal text-gray-600 mt-3'>
+            <p className='text-base lg:leading-tight leading-normal text-gray-700 mt-3'>
               My name is Prathmesh Sadake. I&apos;m a full-stack engineer. As a
               full-stack developer, I can create client-facing apps and websites
               with cutting-edge back-end support. I usually use the MERN stack,
               but I&apos;m flexible enough to utilize whatever tools are
               required.
             </p>
-            <p className='text-base lg:leading-tight leading-normal text-gray-600 mt-3'>
+            <p className='text-base lg:leading-tight leading-normal text-gray-700 mt-3'>
               I specialize in creating solid backends for your app or website
               that handle all of the heavy liftings. I enjoy creating systems
               that are both light and powerful, distributed yet coordinated, and
@@ -53,7 +37,7 @@ const About = () => {
               individualized goods for people by combining my passion for
               learning with my software development talents.
             </p>{' '}
-            <p className='text-base lg:leading-tight leading-normal text-gray-600 mt-3'>
+            <p className='text-base lg:leading-tight leading-normal text-gray-700 mt-3'>
               When I&apos;m not working, I like to spend time reading books,
               listening audiobooks or podcasts, learning to code or tinkering
               with new apps and tools.
