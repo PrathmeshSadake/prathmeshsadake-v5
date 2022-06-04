@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 
 export default function Document() {
   return (
@@ -13,10 +14,10 @@ export default function Document() {
         />
 
         {/* Font Awesome Kit */}
-        <script
+        <Script
           src='https://kit.fontawesome.com/754cd99e93.js'
           crossOrigin='anonymous'
-        ></script>
+        ></Script>
       </Head>
       <body>
         <Main />
