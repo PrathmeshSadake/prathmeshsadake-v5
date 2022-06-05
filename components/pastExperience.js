@@ -87,20 +87,22 @@ const PastExperience = () => {
           ))}
         </div>
         <div className='col-span-3'>
-          <p className='text-lg'>
-            {currentEx.profile} @{' '}
-            <span className='text-secondary'>{currentEx.org}</span>
-          </p>
-          <p className='text-xs lg:leading-tight leading-normal text-gray-400 mb-3'>
-            {currentEx.date}
-          </p>
-          <ul className='list-disc'>
-            {currentEx.tasks.map((task) => (
-              <li key={task} className='text-sm text-gray-300 my-1'>
-                {task}
-              </li>
-            ))}
-          </ul>
+          <div>
+            <p className='text-lg'>
+              {currentEx.profile} @{' '}
+              <span className='text-secondary'>{currentEx.org}</span>
+            </p>
+            <p className='text-xs lg:leading-tight leading-normal text-gray-400 mb-3'>
+              {currentEx.date}
+            </p>
+            <ul className='list-disc'>
+              {currentEx.tasks.map((task) => (
+                <li key={task} className='text-sm text-gray-300 my-1'>
+                  {task}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

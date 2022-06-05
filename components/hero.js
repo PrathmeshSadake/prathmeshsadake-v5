@@ -12,7 +12,7 @@ const Hero = () => {
             top: '0%',
             left: '-25%',
             height: '80%',
-            opacity: 0.03,
+            opacity: 0.05,
             zIndex: -10,
           }}
           viewBox='0 0 105 98'
@@ -108,53 +108,78 @@ const Hero = () => {
       </div>
       <div className='flex items-center'>
         <div>
-          <p className='md:w-9/12 lg:w-11/12 xl:w-10/12 2xl:9/12 text-base leading-normal text-white mt-2'>
+          <p
+            data-aos='fade-up'
+            data-aos-duration='1000'
+            className='md:w-9/12 lg:w-11/12 xl:w-10/12 2xl:9/12 text-base leading-normal text-white mt-2'
+          >
             My name is
           </p>
-          <h1 className='md:w-8/12 lg:w-10/12 xl:8/12 2xl:w-8/12 w-full mt-5 sm:text-5xl text-3xl font-light text-secondary capitalize p-0 m-0'>
+          <h1
+            data-aos='fade-up'
+            data-aos-duration='1000'
+            data-aos-delay='1000'
+            className='md:w-8/12 lg:w-10/12 xl:8/12 2xl:w-8/12 w-full mt-5 sm:text-5xl text-3xl font-light text-secondary capitalize p-0 m-0'
+          >
             Prathmesh Sadake
           </h1>
 
-          <p className='md:w-9/12 lg:w-11/12 xl:w-10/12 2xl:9/12 text-3xl font-light leading-tight text-white mt-2'>
+          <p
+            data-aos='fade-up'
+            data-aos-duration='1000'
+            data-aos-delay='1500'
+            className='md:w-9/12 lg:w-11/12 xl:w-10/12 2xl:9/12 text-3xl font-light leading-tight text-white mt-2'
+          >
             Developing Apps that are made to Impress
             <span className='text-secondary'>.</span>
           </p>
-          <p className='md:w-9/12 lg:w-11/12 xl:w-10/12 2xl:9/12 text-base leading-normal text-white mt-5'>
+          <p
+            data-aos='fade-up'
+            data-aos-duration='1000'
+            data-aos-delay='2000'
+            className='md:w-9/12 lg:w-11/12 xl:w-10/12 2xl:9/12 text-base leading-normal text-white mt-5'
+          >
             I&apos;m a full-stack engineer. I can create client-facing apps and
             websites with cutting-edge back-end support.
           </p>
-          <button className='sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:outline-none hover:bg-gray-300 font-medium leading-none text-primary py-4 px-8 bg-white flex items-center transition-colors'>
-            <a href='#about'>Explore about me</a>
-            <div className='ml-2 mt-0.5'>
-              <svg
-                className='fill-stroke'
-                width='16'
-                height='16'
-                viewBox='0 0 16 16'
-                fill='none'
-                xmlns='http://www.w3.org/2000/svg'
-              >
-                <path
-                  d='M3.33325 8H12.6666'
-                  stroke='#0BA358'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                />
-                <path
-                  d='M10 10.6667L12.6667 8'
-                  stroke='#0BA358'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                />
-                <path
-                  d='M10 5.33301L12.6667 7.99967'
-                  stroke='#0BA358'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                />
-              </svg>
-            </div>
-          </button>
+          <div
+            data-aos='fade-up'
+            data-aos-duration='2000'
+            data-aos-delay='3000'
+          >
+            <button className='sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:outline-none hover:bg-gray-300 font-medium leading-none text-primary py-4 px-8 bg-white flex items-center transition-colors'>
+              <a href='#about'>Explore about me</a>
+              <div className='ml-2 mt-0.5'>
+                <svg
+                  className='fill-stroke'
+                  width='16'
+                  height='16'
+                  viewBox='0 0 16 16'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <path
+                    d='M3.33325 8H12.6666'
+                    stroke='#0BA358'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                  />
+                  <path
+                    d='M10 10.6667L12.6667 8'
+                    stroke='#0BA358'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                  />
+                  <path
+                    d='M10 5.33301L12.6667 7.99967'
+                    stroke='#0BA358'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+
 export default function IndexPage() {
-  const [show, setShow] = useState(null);
-  const [profile, setProfile] = useState(false);
+  const [show, setShow] = useState(false);
   return (
     <div className='h-full w-full'>
       {/* Code block starts */}
@@ -25,7 +25,14 @@ export default function IndexPage() {
           </div>
           <div className='h-full hidden xl:flex items-center justify-end'>
             <button className='sm:w-auto w-full text-xs justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:outline-none hover:bg-gray-300 font-semibold leading-none text-primary py-2 px-3 bg-white flex items-center transition-colors'>
-              <a href='#about'>Resume</a>
+              <a
+                href='https://drive.google.com/file/d/1Tpabb4ja52JgVvdcbdw8N-Jd2ZDx-3Pd/view?usp=sharing'
+                target='_blank'
+                noreferrer
+                noopener
+              >
+                Resume
+              </a>
               <div className='ml-2 mt-0.5'>
                 <svg
                   className='fill-stroke'
@@ -65,18 +72,18 @@ export default function IndexPage() {
                 </div>
               </li>
               <li
-                className='flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-secondary focus:text-secondary focus:outline-none flex justify-center'
+                className='flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-secondary focus:text-secondary focus:outline-none justify-center'
                 onClick={() => {}}
               >
                 <div className='flex items-center'>
                   <span className='ml-2 font-bold'>2. Experience</span>
                 </div>
               </li>
-              <li className='flex md:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-secondary flex items-center focus:text-secondary focus:outline-none'>
+              <li className='flex md:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-secondary items-center focus:text-secondary focus:outline-none'>
                 <span className='ml-2 font-bold'>3. Projects</span>
               </li>
               <li
-                className='border-b border-gray-300 flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-secondary focus:text-secondary focus:outline-none flex justify-center'
+                className='border-b border-gray-300 flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-secondary focus:text-secondary focus:outline-none justify-center'
                 onClick={() => {}}
               >
                 <div className='flex items-center'>
