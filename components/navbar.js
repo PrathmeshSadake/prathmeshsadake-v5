@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
+import { useScrollSection } from 'react-scroll-section';
 
 export default function IndexPage() {
   const [show, setShow] = useState(false);
+  const heroSection = useScrollSection('hero');
+  const aboutSection = useScrollSection('about');
+  const experienceSection = useScrollSection('work');
+  const projectsSection = useScrollSection('projects');
+  const contactSection = useScrollSection('contact');
+
   return (
     <div className='h-full w-full'>
       {/* Code block starts */}
@@ -9,16 +16,28 @@ export default function IndexPage() {
         <div className='container px-6 h-16 flex justify-between items-center lg:items-stretch mx-auto'>
           <div className='flex items-center'>
             <ul className='hidden xl:flex items-center h-full'>
-              <li className='cursor-pointer h-full flex items-center text-sm hover:text-secondary text-white tracking-normal transition duration-150 ease-in-out'>
+              <li
+                onClick={aboutSection.onClick}
+                className='cursor-pointer h-full flex items-center text-sm hover:text-secondary text-white tracking-normal transition duration-150 ease-in-out'
+              >
                 1. About
               </li>
-              <li className='cursor-pointer h-full flex items-center text-sm hover:text-secondary text-white mx-10 tracking-normal transition duration-150 ease-in-out'>
+              <li
+                onClick={experienceSection.onClick}
+                className='cursor-pointer h-full flex items-center text-sm hover:text-secondary text-white mx-10 tracking-normal transition duration-150 ease-in-out'
+              >
                 2. Experience
               </li>
-              <li className='cursor-pointer h-full flex items-center text-sm hover:text-secondary text-white mr-10 tracking-normal transition duration-150 ease-in-out'>
+              <li
+                onClick={projectsSection.onClick}
+                className='cursor-pointer h-full flex items-center text-sm hover:text-secondary text-white mr-10 tracking-normal transition duration-150 ease-in-out'
+              >
                 3. Projects
               </li>
-              <li className='cursor-pointer h-full flex items-center text-sm hover:text-secondary text-white tracking-normal transition duration-150 ease-in-out'>
+              <li
+                onClick={contactSection.onClick}
+                className='cursor-pointer h-full flex items-center text-sm hover:text-secondary text-white tracking-normal transition duration-150 ease-in-out'
+              >
                 4. Contact
               </li>
             </ul>
@@ -68,26 +87,40 @@ export default function IndexPage() {
             <ul className='p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-16 md:mt-16 hidden'>
               <li className='flex md:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-secondary focus:text-secondary focus:outline-none'>
                 <div className='flex items-center'>
-                  <span className='ml-2 font-bold'>1. About</span>
+                  <span
+                    onClick={aboutSection.onClick}
+                    className='ml-2 font-bold'
+                  >
+                    1. About
+                  </span>
                 </div>
               </li>
-              <li
-                className='flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-secondary focus:text-secondary focus:outline-none justify-center'
-                onClick={() => {}}
-              >
+              <li className='flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-secondary focus:text-secondary focus:outline-none justify-center'>
                 <div className='flex items-center'>
-                  <span className='ml-2 font-bold'>2. Experience</span>
+                  <span
+                    onClick={experienceSection.onClick}
+                    className='ml-2 font-bold'
+                  >
+                    2. Experience
+                  </span>
                 </div>
               </li>
               <li className='flex md:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-secondary items-center focus:text-secondary focus:outline-none'>
-                <span className='ml-2 font-bold'>3. Projects</span>
+                <span
+                  onClick={projectsSection.onClick}
+                  className='ml-2 font-bold'
+                >
+                  3. Projects
+                </span>
               </li>
-              <li
-                className='border-b border-gray-300 flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-secondary focus:text-secondary focus:outline-none justify-center'
-                onClick={() => {}}
-              >
+              <li className='border-b border-gray-300 flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-secondary focus:text-secondary focus:outline-none justify-center'>
                 <div className='flex items-center'>
-                  <span className='ml-2 font-bold'>4. Contact</span>
+                  <span
+                    onClick={contactSection.onClick}
+                    className='ml-2 font-bold'
+                  >
+                    4. Contact
+                  </span>
                 </div>
               </li>
             </ul>
@@ -163,7 +196,10 @@ export default function IndexPage() {
                   <div className='mt-6 flex w-full items-center justify-between'>
                     <div className='flex items-center justify-between w-full'>
                       <div className='flex items-center'>
-                        <p className='text-sm  text-white ml-2'>
+                        <p
+                          onClick={heroSection.onClick}
+                          className='text-sm  text-white ml-2'
+                        >
                           Prathmesh Sadake
                         </p>
                       </div>
@@ -195,7 +231,10 @@ export default function IndexPage() {
                     <a className='cursor-pointer'>
                       <li className='text-white pt-10'>
                         <div className='flex items-center'>
-                          <p className='text-secondary xl:text-base text-base ml-3'>
+                          <p
+                            onClick={aboutSection.onClick}
+                            className='text-secondary xl:text-base text-base ml-3'
+                          >
                             1. About
                           </p>
                         </div>
@@ -205,7 +244,10 @@ export default function IndexPage() {
                       <li className='text-white pt-8'>
                         <div className='flex items-center justify-between'>
                           <div className='flex items-center'>
-                            <p className='text-white xl:text-base  text-base ml-3'>
+                            <p
+                              onClick={experienceSection.onClick}
+                              className='text-white xl:text-base  text-base ml-3'
+                            >
                               2. Experience
                             </p>
                           </div>
@@ -215,7 +257,10 @@ export default function IndexPage() {
                     <a className='cursor-pointer'>
                       <li className='text-white pt-8'>
                         <div className='flex items-center'>
-                          <p className='text-white xl:text-base  text-base ml-3'>
+                          <p
+                            onClick={projectsSection.onClick}
+                            className='text-white xl:text-base  text-base ml-3'
+                          >
                             3. Projects
                           </p>
                         </div>
@@ -224,7 +269,10 @@ export default function IndexPage() {
                     <li className='text-white pt-8 cursor-pointer'>
                       <div className='flex items-center justify-between'>
                         <div className='flex items-center'>
-                          <p className='text-white xl:text-base  text-base ml-3'>
+                          <p
+                            onClick={contactSection.onClick}
+                            className='text-white xl:text-base  text-base ml-3'
+                          >
                             4. Contact
                           </p>
                         </div>

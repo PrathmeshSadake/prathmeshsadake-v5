@@ -93,7 +93,7 @@ const PastExperience = () => {
               <span className='text-secondary'>{currentEx.org}</span>
             </p>
             <p className='text-xs lg:leading-tight leading-normal text-gray-400 mb-3'>
-              {currentEx.date}
+              {currentEx.date} | Internship
             </p>
             <ul className='list-disc'>
               {currentEx.tasks.map((task) => (

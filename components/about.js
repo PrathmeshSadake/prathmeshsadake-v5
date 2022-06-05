@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className='bg-white'>
+    <div className='bg-white' id='about'>
       <div className='mb-5'>
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
           <path

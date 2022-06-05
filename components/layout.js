@@ -1,12 +1,14 @@
 import Navbar from './navbar';
 import Footer from './footer';
 
+import { ScrollingProvider } from 'react-scroll-section';
+
 export default function Layout({ children }) {
   return (
-    <div className='relative'>
+    <ScrollingProvider>
       <Navbar />
       <main>{children}</main>
       <Footer />
-    </div>
+    </ScrollingProvider>
   );
 }

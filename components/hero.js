@@ -1,7 +1,8 @@
 import React from 'react';
-import Navbar from './navbar';
+import { useScrollSection } from 'react-scroll-section';
 
 const Hero = () => {
+  const aboutSection = useScrollSection('about');
   return (
     <div className='min-h-screen grid grid-cols-1 md:grid-cols-2 lg:px-0 px-6 2xl:mx-auto 2xl:container z-10'>
       <div className='relative'>
@@ -147,8 +148,11 @@ const Hero = () => {
             data-aos-duration='2000'
             data-aos-delay='3000'
           >
-            <button className='sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:outline-none hover:bg-gray-300 font-medium leading-none text-primary py-4 px-8 bg-white flex items-center transition-colors'>
-              <a href='#about'>Explore about me</a>
+            <button
+              onClick={aboutSection.onClick}
+              className='sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:outline-none hover:bg-gray-300 font-medium leading-none text-primary py-4 px-8 bg-white flex items-center transition-colors'
+            >
+              <a>Explore about me</a>
               <div className='ml-2 mt-0.5'>
                 <svg
                   className='fill-stroke'

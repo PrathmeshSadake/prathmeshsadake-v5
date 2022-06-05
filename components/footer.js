@@ -1,7 +1,7 @@
 import React from 'react';
 function Footer() {
   return (
-    <div className='md:pt-12 mx-auto container p-5 md:p-0'>
+    <div className='md:py-12 mx-auto container p-5 md:p-0'>
       <div className='grid grid-cols-1 lg:grid-cols-7 gap-4'>
         <div className='col-span-3 text-white flex flex-col md:items-start'>
           <p className='text-3xl font-light flex items-center'>Get in touch</p>
