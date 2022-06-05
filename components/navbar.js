@@ -28,7 +28,7 @@ export default function IndexPage() {
               <a
                 href='https://drive.google.com/file/d/1Tpabb4ja52JgVvdcbdw8N-Jd2ZDx-3Pd/view?usp=sharing'
                 target='_blank'
-                noreferrer
+                rel='noreferrer'
                 noopener
               >
                 Resume
