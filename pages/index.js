@@ -20,6 +20,9 @@ export default function Home() {
         <PastExperience />
         <SkillsGrid />
       </Section>{' '}
+      <Section id='projects'>
+        <Projects />
+      </Section>{' '}
       <Section id='contact'>
         <Cta />
       </Section>

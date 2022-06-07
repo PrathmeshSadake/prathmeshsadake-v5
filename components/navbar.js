@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import { useScrollSection } from 'react-scroll-section';
 
@@ -8,6 +10,7 @@ export default function IndexPage() {
   const experienceSection = useScrollSection('work');
   const projectsSection = useScrollSection('projects');
   const contactSection = useScrollSection('contact');
+  const router = useRouter();
 
   return (
     <div className='h-full w-full'>
@@ -15,32 +18,56 @@ export default function IndexPage() {
       <nav className='w-full bg-transparent hidden xl:block shadow'>
         <div className='container px-6 h-16 flex justify-between items-center lg:items-stretch mx-auto'>
           <div className='flex items-center'>
-            <ul className='hidden xl:flex items-center h-full'>
-              <li
-                onClick={aboutSection.onClick}
-                className='cursor-pointer h-full flex items-center text-sm hover:text-secondary text-white tracking-normal transition duration-150 ease-in-out'
-              >
-                1. About
-              </li>
-              <li
-                onClick={experienceSection.onClick}
-                className='cursor-pointer h-full flex items-center text-sm hover:text-secondary text-white mx-10 tracking-normal transition duration-150 ease-in-out'
-              >
-                2. Experience
-              </li>
-              <li
-                onClick={projectsSection.onClick}
-                className='cursor-pointer h-full flex items-center text-sm hover:text-secondary text-white mr-10 tracking-normal transition duration-150 ease-in-out'
-              >
-                3. Projects
-              </li>
-              <li
-                onClick={contactSection.onClick}
-                className='cursor-pointer h-full flex items-center text-sm hover:text-secondary text-white tracking-normal transition duration-150 ease-in-out'
-              >
-                4. Contact
-              </li>
-            </ul>
+            {router.pathname === '/' ? (
+              <ul className='hidden xl:flex items-center h-full'>
+                <li
+                  onClick={aboutSection.onClick}
+                  className='cursor-pointer h-full flex items-center text-sm hover:text-secondary text-white tracking-normal transition duration-150 ease-in-out'
+                >
+                  1. About
+                </li>
+                <li
+                  onClick={experienceSection.onClick}
+                  className='cursor-pointer h-full flex items-center text-sm hover:text-secondary text-white mx-10 tracking-normal transition duration-150 ease-in-out'
+                >
+                  2. Experience
+                </li>
+                <li
+                  onClick={projectsSection.onClick}
+                  className='cursor-pointer h-full flex items-center text-sm hover:text-secondary text-white mr-10 tracking-normal transition duration-150 ease-in-out'
+                >
+                  3. Projects
+                </li>
+                <li
+                  onClick={contactSection.onClick}
+                  className='cursor-pointer h-full flex items-center text-sm hover:text-secondary text-white tracking-normal transition duration-150 ease-in-out'
+                >
+                  4. Contact
+                </li>
+              </ul>
+            ) : (
+              <Link href='/'>
+                <li className='cursor-pointer h-full flex items-center text-sm hover:text-secondary text-white tracking-normal transition duration-150 ease-in-out'>
+                  <span>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      class='h-6 w-6 mr-4'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      stroke='currentColor'
+                      stroke-width='2'
+                    >
+                      <path
+                        stroke-linecap='round'
+                        stroke-linejoin='round'
+                        d='M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z'
+                      />
+                    </svg>
+                  </span>{' '}
+                  Back to home
+                </li>
+              </Link>
+            )}
           </div>
           <div className='h-full hidden xl:flex items-center justify-end'>
             <button className='sm:w-auto w-full text-xs justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:outline-none hover:bg-gray-300 font-semibold leading-none text-primary py-2 px-3 bg-white flex items-center transition-colors'>

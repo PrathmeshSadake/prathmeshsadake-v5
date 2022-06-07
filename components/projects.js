@@ -1,282 +1,252 @@
-import React from 'react';
+import Link from 'next/link';
+import React, { useState } from 'react';
+import Modal from 'react-modal';
+import ProjectModal from './projectModal';
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+  },
+};
 
 const Projects = () => {
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    console.log('Modal open');
+  }
+  function closeModal() {
+    setIsOpen(false);
+  }
+  Modal.setAppElement('#modal');
+  Modal.defaultStyles.overlay.backgroundColor = 'rgba(1, 18, 16, 0.85)';
+
   return (
-    <div className='flex justify-center items-center'>
-      <div className='2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto'>
-        <div className='flex flex-col items-center justify-center'>
-          <h3 className='text-4xl font-semibold leading-9 text-center text-gray-800'>
-            Recent Projects
-          </h3>
-          <p className='text-base leading-normal text-center text-gray-600 mt-4 lg:w-1/2 md:w-10/12 w-11/12'>
-            I usually use the MERN stack or Machine Learning for my projects,
-            but I&apos;m flexible enough to utilize whatever tools are required.
+    <div className='relative'>
+      <Modal
+        isOpen={modalIsOpen}
+        onAfterOpen={afterOpenModal}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel='Project Modal'
+        // preventScroll={modalIsOpen}
+      >
+        <ProjectModal closeModal={closeModal} />
+      </Modal>
+      <div className='flex justify-center items-center bg-white py-14'>
+        <div className='container mx-auto'>
+          <p
+            className='
+							text-sm
+							lg:leading-6
+							leading-7
+							text-gray-400
+              text-center
+						'
+          >
+            Recent works
           </p>
-        </div>
-        <div className='lg:flex items-stretch md:mt-12 mt-8'>
-          <div className='lg:w-1/2'>
-            <div className='sm:flex items-center justify-between xl:gap-x-8 gap-x-6'>
-              <div className='sm:w-1/2 relative'>
-                <div>
-                  <p className='p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0'>
-                    12 April 2021
-                  </p>
-                  <div className='absolute bottom-0 left-0 p-6'>
-                    <h2 className='text-xl font-semibold 5 text-white'>
-                      The Decorated Ways
-                    </h2>
-                    <p className='text-base leading-4 text-white mt-2'>
-                      Dive into minimalism
-                    </p>
-                    <div className='flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline'>
-                      <p className='pr-2 text-sm font-medium leading-none'>
-                        Read More
-                      </p>
-                      <svg
-                        className='fill-stroke'
-                        width='16'
-                        height='16'
-                        viewBox='0 0 16 16'
-                        fill='none'
-                        xmlns='http://www.w3.org/2000/svg'
-                      >
-                        <path
-                          d='M5.75 12.5L10.25 8L5.75 3.5'
-                          stroke='currentColor'
-                          strokeWidth='2'
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <img
-                  src='https://i.ibb.co/DYxtCJq/img-1.png'
-                  className='w-full'
-                  alt='chair'
-                />
-              </div>
-              <div className='sm:w-1/2 sm:mt-0 mt-4 relative'>
-                <div>
-                  <p className='p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0'>
-                    12 April 2021
-                  </p>
-                  <div className='absolute bottom-0 left-0 p-6'>
-                    <h2 className='text-xl font-semibold 5 text-white'>
-                      The Decorated Ways
-                    </h2>
-                    <p className='text-base leading-4 text-white mt-2'>
-                      Dive into minimalism
-                    </p>
-                    <div className='flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline'>
-                      <p className='pr-2 text-sm font-medium leading-none'>
-                        Read More
-                      </p>
-                      <svg
-                        className='fill-stroke'
-                        width='16'
-                        height='16'
-                        viewBox='0 0 16 16'
-                        fill='none'
-                        xmlns='http://www.w3.org/2000/svg'
-                      >
-                        <path
-                          d='M5.75 12.5L10.25 8L5.75 3.5'
-                          stroke='currentColor'
-                          strokeWidth='2'
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <img
-                  src='https://i.ibb.co/3C5HvxC/img-2.png'
-                  className='w-full'
-                  alt='wall design'
-                />
-              </div>
+          <h1
+            className='
+							lg:text-4xl
+							text-2xl
+							font-semibold
+							lg:leading-6
+							leading-7
+							text-gray-800
+							mt-3
+              text-center
+              pb-8
+						'
+          >
+            Projects I have Worked on
+          </h1>
+          <div className='grid grid-cols-2 gap-8 p-6 bg-pink-50 mb-4'>
+            <div className='w-full overflow-hidden' style={{ height: '400px' }}>
+              <img
+                src='https://source.unsplash.com/QQhAQHWvTYk'
+                className='h-full w-full object-cover hover:scale-110 transition-all duration-300 ease-out cursor-pointer'
+                alt=''
+              />
             </div>
-            <div className='relative'>
-              <div>
-                <p className='md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0'>
-                  12 April 2021
-                </p>
-                <div className='absolute bottom-0 left-0 md:p-10 p-6'>
-                  <h2 className='text-xl font-semibold 5 text-white'>
-                    The Decorated Ways
-                  </h2>
-                  <p className='text-base leading-4 text-white mt-2'>
-                    Dive into minimalism
-                  </p>
-                  <div className='flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline'>
-                    <p className='pr-2 text-sm font-medium leading-none'>
-                      Read More
-                    </p>
-                    <svg
-                      className='fill-stroke'
-                      width='16'
-                      height='16'
-                      viewBox='0 0 16 16'
-                      fill='none'
-                      xmlns='http://www.w3.org/2000/svg'
-                    >
-                      <path
-                        d='M5.75 12.5L10.25 8L5.75 3.5'
-                        stroke='currentColor'
-                        strokeWidth='2'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                      />
-                    </svg>
-                  </div>
+            <div className='flex flex-col justify-center'>
+              <p className='text-sm leading-7 text-gray-400 mt-3'>Featured</p>
+              <h4 className='text-2xl font-semibold leading-7	text-gray-800 mt-3'>
+                Facebook Friend Recommendation using Graph Mining
+              </h4>
+              <p className='text-sm leading-7 text-gray-400 mt-3'>
+                Machine Learning | 6 Dec 2021
+              </p>
+
+              <p className='text-sm leading-7 text-gray-400'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+                explicabo et blanditiis, laborum reiciendis dolore. Nulla autem
+                commodi reprehenderit assumenda?
+              </p>
+              <p className='text-sm leading-7 text-gray-400'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+                explicabo et blanditiis, laborum reiciendis dolore. Nulla autem
+                commodi reprehenderit assumenda?
+              </p>
+              <button
+                onClick={openModal}
+                className='self-start mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-secondary focus:outline-none hover:bg-black font-medium leading-none text-white py-4 px-8 bg-primary flex items-center transition-colors'
+              >
+                <a>Learn More About This Project</a>
+                <div className='ml-2 mt-0.5'>
+                  <svg
+                    className='fill-stroke'
+                    width='16'
+                    height='16'
+                    viewBox='0 0 16 16'
+                    fill='none'
+                    xmlns='http://www.w3.org/2000/svg'
+                  >
+                    <path
+                      d='M3.33325 8H12.6666'
+                      stroke='#fff'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                    />
+                    <path
+                      d='M10 10.6667L12.6667 8'
+                      stroke='#fff'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                    />
+                    <path
+                      d='M10 5.33301L12.6667 7.99967'
+                      stroke='#fff'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                    />
+                  </svg>
                 </div>
-              </div>
-              <img
-                src='https://i.ibb.co/Ms4qyXp/img-3.png'
-                alt='sitting place'
-                className='w-full mt-8 md:mt-6 hidden sm:block'
-              />
-              <img
-                className='w-full mt-4 sm:hidden'
-                src='https://i.ibb.co/6XYbN7f/Rectangle-29.png'
-                alt='sitting place'
-              />
+              </button>
             </div>
           </div>
-          <div className='lg:w-1/2 xl:ml-8 lg:ml-4 lg:mt-0 md:mt-6 mt-4 lg:flex flex-col justify-between'>
-            <div className='relative'>
-              <div>
-                <p className='md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0'>
-                  12 April 2021
-                </p>
-                <div className='absolute bottom-0 left-0 md:p-10 p-6'>
-                  <h2 className='text-xl font-semibold 5 text-white'>
-                    The Decorated Ways
-                  </h2>
-                  <p className='text-base leading-4 text-white mt-2'>
-                    Dive into minimalism
-                  </p>
-                  <div className='flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline'>
-                    <p className='pr-2 text-sm font-medium leading-none'>
-                      Read More
-                    </p>
-                    <svg
-                      className='fill-stroke'
-                      width='16'
-                      height='16'
-                      viewBox='0 0 16 16'
-                      fill='none'
-                      xmlns='http://www.w3.org/2000/svg'
-                    >
-                      <path
-                        d='M5.75 12.5L10.25 8L5.75 3.5'
-                        stroke='currentColor'
-                        strokeWidth='2'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <img
-                src='https://i.ibb.co/6Wfjf2w/img-4.png'
-                alt='sitting place'
-                className='w-full sm:block hidden'
-              />
-              <img
-                className='w-full sm:hidden'
-                src='https://i.ibb.co/dpXStJk/Rectangle-29.png'
-                alt='sitting place'
-              />
-            </div>
-            <div className='sm:flex items-center justify-between xl:gap-x-8 gap-x-6 md:mt-6 mt-4'>
-              <div className='relative w-full'>
-                <div>
-                  <p className='p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0'>
-                    12 April 2021
-                  </p>
-                  <div className='absolute bottom-0 left-0 p-6'>
-                    <h2 className='text-xl font-semibold 5 text-white'>
-                      The Decorated Ways
-                    </h2>
-                    <p className='text-base leading-4 text-white mt-2'>
-                      Dive into minimalism
-                    </p>
-                    <div className='flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline'>
-                      <p className='pr-2 text-sm font-medium leading-none'>
-                        Read More
-                      </p>
-                      <svg
-                        className='fill-stroke'
-                        width='16'
-                        height='16'
-                        viewBox='0 0 16 16'
-                        fill='none'
-                        xmlns='http://www.w3.org/2000/svg'
-                      >
-                        <path
-                          d='M5.75 12.5L10.25 8L5.75 3.5'
-                          stroke='currentColor'
-                          strokeWidth='2'
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
+          <div className='grid grid-cols-3 gap-4'>
+            <div className='p-6 bg-teal-50'>
+              <div
+                className='w-full overflow-hidden'
+                style={{ height: '225px' }}
+              >
+                {' '}
                 <img
-                  src='https://i.ibb.co/3yvZBpm/img-5.png'
-                  className='w-full'
-                  alt='chair'
+                  src='https://source.unsplash.com/RQ8zOzo-x_k'
+                  className='h-full w-full object-cover hover:scale-110 transition-all duration-300 ease-out cursor-pointer'
+                  alt=''
                 />
               </div>
-              <div className='relative w-full sm:mt-0 mt-4'>
-                <div>
-                  <p className='p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0'>
-                    12 April 2021
-                  </p>
-                  <div className='absolute bottom-0 left-0 p-6'>
-                    <h2 className='text-xl font-semibold 5 text-white'>
-                      The Decorated Ways
-                    </h2>
-                    <p className='text-base leading-4 text-white mt-2'>
-                      Dive into minimalism
-                    </p>
-                    <div className='flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline'>
-                      <p className='pr-2 text-sm font-medium leading-none'>
-                        Read More
-                      </p>
-                      <svg
-                        className='fill-stroke'
-                        width='16'
-                        height='16'
-                        viewBox='0 0 16 16'
-                        fill='none'
-                        xmlns='http://www.w3.org/2000/svg'
-                      >
-                        <path
-                          d='M5.75 12.5L10.25 8L5.75 3.5'
-                          stroke='currentColor'
-                          strokeWidth='2'
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
+
+              <p className='text-sm leading-7 text-gray-400 mt-3'>
+                Machine Learning
+              </p>
+              <p className='text-sm leading-7 text-gray-400'>6 Dec 2021</p>
+              <h4 className='text-2xl font-semibold leading-7	text-gray-800 mt-3'>
+                Netflix Movie Recommendation System (Collaborative based
+                recommendation)
+              </h4>
+              <p className='text-sm leading-7 text-gray-400'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+                explicabo et blanditiis, laborum reiciendis dolore. Nulla autem
+                commodi reprehenderit assumenda?
+              </p>
+            </div>
+            <div className='p-6 bg-blue-50'>
+              <div
+                className='w-full overflow-hidden'
+                style={{ height: '225px' }}
+              >
                 <img
-                  src='https://i.ibb.co/gDdnJb5/img-6.png'
-                  className='w-full'
-                  alt='wall design'
+                  src='https://source.unsplash.com/1uQe5BIiH8w'
+                  className='h-full w-full object-cover hover:scale-110 transition-all duration-300 ease-out cursor-pointer'
+                  alt=''
                 />
               </div>
+
+              <p className='text-sm leading-7 text-gray-400 mt-3'>
+                Machine Learning
+              </p>
+              <p className='text-sm leading-7 text-gray-400'>6 Dec 2021</p>
+              <h4 className='text-2xl font-semibold leading-7	text-gray-800 mt-3'>
+                Microsoft Malware Detection
+              </h4>
+              <p className='text-sm leading-7 text-gray-400'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+                explicabo et blanditiis, laborum reiciendis dolore. Nulla autem
+                commodi reprehenderit assumenda?
+              </p>
+            </div>{' '}
+            <div className='p-6 bg-red-50'>
+              <div
+                className='w-full overflow-hidden'
+                style={{ height: '225px' }}
+              >
+                {' '}
+                <img
+                  src='https://source.unsplash.com/qp51FQhBnS0'
+                  className='h-full w-full object-cover hover:scale-110 transition-all duration-300 ease-out cursor-pointer'
+                  alt=''
+                />
+              </div>
+
+              <p className='text-sm leading-7 text-gray-400 mt-3'>MERN Stack</p>
+              <p className='text-sm leading-7 text-gray-400'>6 Dec 2021</p>
+              <h4 className='text-2xl font-semibold leading-7	text-gray-800 mt-3'>
+                Full Stack MERN Social Media App with Auth, Pagination, Comments
+              </h4>
+              <p className='text-sm leading-7 text-gray-400'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+                explicabo et blanditiis, laborum reiciendis dolore. Nulla autem
+                commodi reprehenderit assumenda?
+              </p>
             </div>
+          </div>
+
+          <div className='flex flex-col items-center justify-center'>
+            <Link href='/projects'>
+              <div className='cursor-pointer sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-secondary focus:outline-none hover:bg-black font-medium leading-none text-white hover:text-secondary py-4 px-8 bg-primary flex items-center transition-colors'>
+                <p>Explore all projects</p>
+                <div className='ml-2 mt-0.5'>
+                  <svg
+                    className='fill-stroke'
+                    width='16'
+                    height='16'
+                    viewBox='0 0 16 16'
+                    fill='none'
+                    xmlns='http://www.w3.org/2000/svg'
+                  >
+                    <path
+                      d='M3.33325 8H12.6666'
+                      stroke='#0BA358'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                    />
+                    <path
+                      d='M10 10.6667L12.6667 8'
+                      stroke='#0BA358'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                    />
+                    <path
+                      d='M10 5.33301L12.6667 7.99967'
+                      stroke='#0BA358'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                    />
+                  </svg>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

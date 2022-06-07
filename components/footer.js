@@ -1,5 +1,13 @@
+import { useRouter } from 'next/router';
 import React from 'react';
+import { useScrollSection } from 'react-scroll-section';
+
 function Footer() {
+  const aboutSection = useScrollSection('about');
+  const experienceSection = useScrollSection('work');
+  const projectsSection = useScrollSection('projects');
+  const router = useRouter();
+
   return (
     <div className='md:py-12 mx-auto container p-5 md:p-0'>
       <div className='grid grid-cols-1 lg:grid-cols-7 gap-4'>
@@ -17,26 +25,32 @@ function Footer() {
           </a>
         </div>
         <div className='col-span-2 text-base text-gray-300'>
-          <ul className='grid grid-cols-2 md:flex flex-col items-start'>
-            <li className='cursor-pointer hover:text-secondary transition ease-in-out pt-5'>
-              About
-            </li>
-            <li className='cursor-pointer hover:text-secondary transition ease-in-out pt-5'>
-              <a
-                href='https://github.com/PrathmeshSadake'
-                target='_blank'
-                rel='noreferrer'
+          {router.pathname === '/' && (
+            <ul className='grid grid-cols-2 md:flex flex-col items-start'>
+              <li
+                onClick={aboutSection.onClick}
+                className='cursor-pointer hover:text-secondary transition ease-in-out pt-5'
+              >
+                About
+              </li>
+              <li
+                onClick={projectsSection.onClick}
+                className='cursor-pointer hover:text-secondary transition ease-in-out pt-5'
               >
                 Projects
-              </a>
-            </li>
-            <li className='cursor-pointer hover:text-secondary transition ease-in-out pt-5'>
-              Blogs
-            </li>
-            <li className='cursor-pointer hover:text-secondary transition ease-in-out pt-5'>
-              <a href='mailto:prathmeshsadake@gmail.com'>Contact</a>
-            </li>
-          </ul>
+              </li>
+              <li className='cursor-pointer hover:text-secondary transition ease-in-out pt-5'>
+                Blogs
+              </li>
+
+              <li
+                onClick={experienceSection.onClick}
+                className='cursor-pointer hover:text-secondary transition ease-in-out pt-5'
+              >
+                Experience
+              </li>
+            </ul>
+          )}
         </div>
         <div className='col-span-2 text-base text-gray-300'>
           <ul className='grid grid-cols-2 md:flex flex-col items-start'>
@@ -69,7 +83,7 @@ function Footer() {
             </li>
             <li className='cursor-pointer hover:text-secondary transition ease-in-out pt-5'>
               <a
-                href='https://www.facebook.com/PrathmeshSadake'
+                href='https://www.facebook.com/prathamesh.sadake/'
                 target='_blank'
                 rel='noreferrer'
               >
