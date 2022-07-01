@@ -1,5 +1,4 @@
 import React from 'react';
-import Projects from '../../components/projects';
 
 const ProjectsPage = () => {
   const colors = ['bg-fuchsia-50', 'bg-teal-50', 'bg-pink-50', 'bg-blue-50'];
@@ -13,7 +12,7 @@ const ProjectsPage = () => {
         {[1, 2, 3, 4, 5, 6, 7]
           .filter((val, idx) => idx < 3)
           .map((el, idx) => (
-            <div className={`grid grid-cols-2 gap-8 p-10 ${colors[idx]} my-10`}>
+            <div key={idx} className={`grid grid-cols-2 gap-8 p-10 ${colors[idx]} my-10`}>
               <div
                 className={`${
                   idx % 2 === 0 ? 'order-last' : ''

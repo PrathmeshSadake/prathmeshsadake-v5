@@ -2,11 +2,11 @@ import React from 'react';
 
 const ProjectModal = ({ closeModal }) => {
   return (
-    <div class='bg-white container mx-auto max-w-lg'>
-      <div class='flex justify-end items-end p-3'>
+    <div className='bg-white container mx-auto max-w-lg'>
+      <div className='flex justify-end items-end p-3'>
         <svg
           onClick={closeModal}
-          class='lg:mr-0 md:mr-0 -mr-2 cursor-pointer'
+          className='lg:mr-0 md:mr-0 -mr-2 cursor-pointer'
           width='24'
           height='24'
           viewBox='0 0 24 24'
@@ -19,30 +19,30 @@ const ProjectModal = ({ closeModal }) => {
           />
         </svg>
       </div>
-      <div class='flex justify-center items-center px-4'>
+      <div className='flex justify-center items-center px-4'>
         <img
-          class='w-full object-fill object-center'
+          className='w-full object-fill object-center'
           src='https://tuk-cdn.s3.amazonaws.com/can-uploader/pexels-karolina-grabowska-5650050%201.png'
           alt='black-friday-sale'
         />
       </div>
-      <div class='mt-8'>
-        <p class='lg:text-3xl text-center font-medium lg:leading-9 text-gray-800 lg:mb-4 md:mb-2 md:text-3xl text-2xl md:leading-loose mb-2'>
+      <div className='mt-8'>
+        <p className='lg:text-3xl text-center font-medium lg:leading-9 text-gray-800 lg:mb-4 md:mb-2 md:text-3xl text-2xl md:leading-loose mb-2'>
           Facebook Friend Recommendation using Graph Mining
         </p>
-        <p class='lg:text-base md:text-base text-sm md:tracking-wider lg:tracking-normal leading-normal text-center text-gray-600 lg:block md:block hidden'>
+        <p className='lg:text-base md:text-base text-sm md:tracking-wider lg:tracking-normal leading-normal text-center text-gray-600 lg:block md:block hidden'>
           Be first to hear about our special offers, new arrivals and much
           <br />
           more. Subscribe to our newsletter
         </p>
-        <p class='text-sm text-center text-gray-600 lg:hidden md:hidden block'>
+        <p className='text-sm text-center text-gray-600 lg:hidden md:hidden block'>
           Be first to hear about our special offers, new arrivals and much more.
           Subscribe to our <br />
           newsletter
         </p>
       </div>
-      <div class='flex justify-center items-center mt-4 w-full px-4'>
-        <button class='text-base font-medium text-center leading-none text-white py-4 lg:w-full md:w-full w-full bg-gray-800 hover:bg-gray-700 transition duration-300 ease-in-out'>
+      <div className='flex justify-center items-center mt-4 w-full px-4'>
+        <button className='text-base font-medium text-center leading-none text-white py-4 lg:w-full md:w-full w-full bg-gray-800 hover:bg-gray-700 transition duration-300 ease-in-out'>
           View More
         </button>
       </div>
