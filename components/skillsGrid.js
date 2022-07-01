@@ -8,7 +8,7 @@ const SkillsGrid = () => {
           <div
             data-aos='zoom-out'
             data-aos-delay='1000'
-            className='sm:border-secondary sm:border-b-2'
+            
           >
             <i className='fa-solid fa-code fa-xl text-yellow-500'></i>
             <p className='text-2xl font-extralight leading-tight text-white mt-6'>
@@ -22,7 +22,7 @@ const SkillsGrid = () => {
           <div
             data-aos='zoom-out'
             data-aos-delay='1700'
-            className='sm:border-secondary sm:border-b-2'
+            
           >
             <i className='fa-solid fa-chart-column fa-xl text-cyan-300'></i>
             <p className='text-2xl font-extralight leading-tight text-white mt-6'>
@@ -37,7 +37,7 @@ const SkillsGrid = () => {
           <div
             data-aos='zoom-out'
             data-aos-delay='2400'
-            className='sm:border-secondary sm:border-b-2'
+            
           >
             <i className='fa-solid fa-brain fa-xl text-lime-300'></i>
             <p className='text-2xl font-extralight leading-tight text-white mt-6'>
@@ -52,7 +52,7 @@ const SkillsGrid = () => {
           <div
             data-aos='zoom-out'
             data-aos-delay='3000'
-            className='sm:border-secondary sm:border-b-2'
+            
           >
             <i className='fa-solid fa-face-laugh-beam fa-xl text-yellow-300'></i>
             <p className='text-2xl font-extralight leading-tight text-white mt-6'>

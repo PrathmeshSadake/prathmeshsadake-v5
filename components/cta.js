@@ -18,7 +18,7 @@ const Cta = () => {
               </p>
             </div>
             <div className='mt-6 w-full'>
-              <button className='px-4 bg-primary flex justify-between items-center w-full lg:w-72 h-12 text-white hover:bg-primary'>
+              <a href='https://medium.com/@prathmeshsadake' target={'_blank'} rel='noreferrer' className='px-4 bg-primary flex justify-between items-center w-full lg:w-72 h-12 text-white hover:bg-primary'>
                 <p className='text-lg font-medium leading-5'>Visit my blog</p>
                 <svg
                   width='32'
@@ -49,7 +49,7 @@ const Cta = () => {
                     strokeLinejoin='round'
                   />
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
           <div className='lg:col-span-3  w-full'>
