@@ -77,7 +77,7 @@ const PastExperience = () => {
               }}
               className={`cursor-pointer p-2 mb-2 ${
                 currentEx === ex
-                  ? 'text-white border-l-4 border-secondary'
+                  ? 'text-black border-l-4 border-secondary'
                   : 'text-secondary'
               }`}
               onClick={() => setCurrentEx(ex)}
@@ -92,12 +92,12 @@ const PastExperience = () => {
               {currentEx.profile} @{' '}
               <span className='text-secondary'>{currentEx.org}</span>
             </p>
-            <p className='text-xs lg:leading-tight leading-normal text-gray-400 mb-3'>
+            <p className='text-xs lg:leading-tight leading-normal text-gray-700 mb-3'>
               {currentEx.date} | Internship
             </p>
             <ul className='list-disc'>
               {currentEx.tasks.map((task) => (
-                <li key={task} className='text-sm text-gray-300 my-1'>
+                <li key={task} className='text-sm text-gray-700 my-1'>
                   {task}
                 </li>
               ))}

@@ -48,7 +48,7 @@ const Projects = () => {
 							text-sm
 							lg:leading-6
 							leading-7
-							text-gray-400
+							text-gray-700
               text-center
 						'
           >
@@ -78,20 +78,20 @@ const Projects = () => {
               />
             </div>
             <div className='flex flex-col justify-center'>
-              <p className='text-sm leading-7 text-gray-400 mt-3'>Featured</p>
+              <p className='text-sm leading-7 text-gray-700 mt-3'>Featured</p>
               <h4 className='text-2xl font-semibold leading-7	text-gray-800 mt-3'>
                 Facebook Friend Recommendation using Graph Mining
               </h4>
-              <p className='text-sm leading-7 text-gray-400 mt-3'>
+              <p className='text-sm leading-7 text-gray-700 mt-3'>
                 Machine Learning | 6 Dec 2021
               </p>
 
-              <p className='text-sm leading-7 text-gray-400'>
+              <p className='text-sm leading-7 text-gray-700'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
                 explicabo et blanditiis, laborum reiciendis dolore. Nulla autem
                 commodi reprehenderit assumenda?
               </p>
-              <p className='text-sm leading-7 text-gray-400'>
+              <p className='text-sm leading-7 text-gray-700'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
                 explicabo et blanditiis, laborum reiciendis dolore. Nulla autem
                 commodi reprehenderit assumenda?
@@ -147,15 +147,15 @@ const Projects = () => {
                 />
               </div>
 
-              <p className='text-sm leading-7 text-gray-400 mt-3'>
+              <p className='text-sm leading-7 text-gray-700 mt-3'>
                 Machine Learning
               </p>
-              <p className='text-sm leading-7 text-gray-400'>6 Dec 2021</p>
+              <p className='text-sm leading-7 text-gray-700'>6 Dec 2021</p>
               <h4 className='text-2xl font-semibold leading-7	text-gray-800 mt-3'>
                 Netflix Movie Recommendation System (Collaborative based
                 recommendation)
               </h4>
-              <p className='text-sm leading-7 text-gray-400'>
+              <p className='text-sm leading-7 text-gray-700'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
                 explicabo et blanditiis, laborum reiciendis dolore. Nulla autem
                 commodi reprehenderit assumenda?
@@ -173,14 +173,14 @@ const Projects = () => {
                 />
               </div>
 
-              <p className='text-sm leading-7 text-gray-400 mt-3'>
+              <p className='text-sm leading-7 text-gray-700 mt-3'>
                 Machine Learning
               </p>
-              <p className='text-sm leading-7 text-gray-400'>6 Dec 2021</p>
+              <p className='text-sm leading-7 text-gray-700'>6 Dec 2021</p>
               <h4 className='text-2xl font-semibold leading-7	text-gray-800 mt-3'>
                 Microsoft Malware Detection
               </h4>
-              <p className='text-sm leading-7 text-gray-400'>
+              <p className='text-sm leading-7 text-gray-700'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
                 explicabo et blanditiis, laborum reiciendis dolore. Nulla autem
                 commodi reprehenderit assumenda?
@@ -199,12 +199,12 @@ const Projects = () => {
                 />
               </div>
 
-              <p className='text-sm leading-7 text-gray-400 mt-3'>MERN Stack</p>
-              <p className='text-sm leading-7 text-gray-400'>6 Dec 2021</p>
+              <p className='text-sm leading-7 text-gray-700 mt-3'>MERN Stack</p>
+              <p className='text-sm leading-7 text-gray-700'>6 Dec 2021</p>
               <h4 className='text-2xl font-semibold leading-7	text-gray-800 mt-3'>
                 Full Stack MERN Social Media App with Auth, Pagination, Comments
               </h4>
-              <p className='text-sm leading-7 text-gray-400'>
+              <p className='text-sm leading-7 text-gray-700'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
                 explicabo et blanditiis, laborum reiciendis dolore. Nulla autem
                 commodi reprehenderit assumenda?

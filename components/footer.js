@@ -11,9 +11,9 @@ function Footer() {
   return (
     <div className='md:py-12 mx-auto container p-5 md:p-0'>
       <div className='grid grid-cols-1 lg:grid-cols-7 gap-4'>
-        <div className='col-span-3 text-white flex flex-col md:items-start'>
+        <div className='col-span-3 text-black flex flex-col md:items-start'>
           <p className='text-3xl font-light flex items-center'>Get in touch</p>
-          <p className='text-sm font-light w-3/4 my-3 text-gray-300'>
+          <p className='text-sm font-light w-3/4 my-3 text-gray-700'>
             My inbox is always open. Whether you have a question or just want to
             say hi, I&#39;ll try my best to get back to you!
           </p>
@@ -24,7 +24,7 @@ function Footer() {
             prathmeshsadake@gmail.com
           </a>
         </div>
-        <div className='col-span-2 text-base text-gray-300'>
+        <div className='col-span-2 text-base text-gray-700'>
           {router.pathname === '/' && (
             <ul className='grid grid-cols-2 md:flex flex-col items-start'>
               <li
@@ -52,7 +52,7 @@ function Footer() {
             </ul>
           )}
         </div>
-        <div className='col-span-2 text-base text-gray-300'>
+        <div className='col-span-2 text-base text-gray-700'>
           <ul className='grid grid-cols-2 md:flex flex-col items-start'>
             <li className='cursor-pointer hover:text-secondary transition ease-in-out pt-5'>
               <a

@@ -12,7 +12,10 @@ const ProjectsPage = () => {
         {[1, 2, 3, 4, 5, 6, 7]
           .filter((val, idx) => idx < 3)
           .map((el, idx) => (
-            <div key={idx} className={`grid grid-cols-2 gap-8 p-10 ${colors[idx]} my-10`}>
+            <div
+              key={idx}
+              className={`grid grid-cols-2 gap-8 p-10 ${colors[idx]} my-10`}
+            >
               <div
                 className={`${
                   idx % 2 === 0 ? 'order-last' : ''
@@ -26,26 +29,26 @@ const ProjectsPage = () => {
                 />
               </div>
               <div className='flex flex-col justify-center'>
-                <p className='text-sm leading-7 text-gray-400 mt-3'>Featured</p>
+                <p className='text-sm leading-7 text-gray-700 mt-3'>Featured</p>
                 <h4 className='text-2xl font-semibold leading-7	text-gray-800 mt-3'>
                   Facebook Friend Recommendation using Graph Mining
                 </h4>
-                <p className='text-sm leading-7 text-gray-400 mt-3'>
+                <p className='text-sm leading-7 text-gray-700 mt-3'>
                   Machine Learning | 6 Dec 2021
                 </p>
 
-                <p className='text-sm leading-7 text-gray-400'>
+                <p className='text-sm leading-7 text-gray-700'>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Error explicabo et blanditiis, laborum reiciendis dolore.
                   Nulla autem commodi reprehenderit assumenda?
                 </p>
-                <p className='text-sm leading-7 text-gray-400'>
+                <p className='text-sm leading-7 text-gray-700'>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Error explicabo et blanditiis, laborum reiciendis dolore.
                   Nulla autem commodi reprehenderit assumenda?
                 </p>
                 <button className='self-start mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-secondary focus:outline-none hover:bg-black font-medium leading-none text-white py-4 px-8 bg-primary flex items-center transition-colors'>
-                  <a>Learn More About This Project</a>
+                  <a className='text-white'>Learn More About This Project</a>
                   <div className='ml-2 mt-0.5'>
                     <svg
                       className='fill-stroke'
@@ -82,7 +85,7 @@ const ProjectsPage = () => {
         <h3 className='text-4xl font-semibold leading-9 mt-24 text-gray-800 text-center'>
           Other Noteworthy Projects
         </h3>
-        <p className='text-gray-500 mb-12 font-extralight text-center'>
+        <p className='text-gray-600 mb-12 font-extralight text-center'>
           A big list of things I&apos;ve worked on
         </p>
         <div className='grid grid-cols-3 gap-4'>
@@ -96,15 +99,15 @@ const ProjectsPage = () => {
               />
             </div>
 
-            <p className='text-sm leading-7 text-gray-400 mt-3'>
+            <p className='text-sm leading-7 text-gray-700 mt-3'>
               Machine Learning
             </p>
-            <p className='text-sm leading-7 text-gray-400'>6 Dec 2021</p>
+            <p className='text-sm leading-7 text-gray-700'>6 Dec 2021</p>
             <h4 className='text-2xl font-semibold leading-7	text-gray-800 mt-3'>
               Netflix Movie Recommendation System (Collaborative based
               recommendation)
             </h4>
-            <p className='text-sm leading-7 text-gray-400'>
+            <p className='text-sm leading-7 text-gray-700'>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
               explicabo et blanditiis, laborum reiciendis dolore. Nulla autem
               commodi reprehenderit assumenda?
@@ -119,14 +122,14 @@ const ProjectsPage = () => {
               />
             </div>
 
-            <p className='text-sm leading-7 text-gray-400 mt-3'>
+            <p className='text-sm leading-7 text-gray-700 mt-3'>
               Machine Learning
             </p>
-            <p className='text-sm leading-7 text-gray-400'>6 Dec 2021</p>
+            <p className='text-sm leading-7 text-gray-700'>6 Dec 2021</p>
             <h4 className='text-2xl font-semibold leading-7	text-gray-800 mt-3'>
               Microsoft Malware Detection
             </h4>
-            <p className='text-sm leading-7 text-gray-400'>
+            <p className='text-sm leading-7 text-gray-700'>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
               explicabo et blanditiis, laborum reiciendis dolore. Nulla autem
               commodi reprehenderit assumenda?
@@ -142,12 +145,12 @@ const ProjectsPage = () => {
               />
             </div>
 
-            <p className='text-sm leading-7 text-gray-400 mt-3'>MERN Stack</p>
-            <p className='text-sm leading-7 text-gray-400'>6 Dec 2021</p>
+            <p className='text-sm leading-7 text-gray-700 mt-3'>MERN Stack</p>
+            <p className='text-sm leading-7 text-gray-700'>6 Dec 2021</p>
             <h4 className='text-2xl font-semibold leading-7	text-gray-800 mt-3'>
               Full Stack MERN Social Media App with Auth, Pagination, Comments
             </h4>
-            <p className='text-sm leading-7 text-gray-400'>
+            <p className='text-sm leading-7 text-gray-700'>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
               explicabo et blanditiis, laborum reiciendis dolore. Nulla autem
               commodi reprehenderit assumenda?

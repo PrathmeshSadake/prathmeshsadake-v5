@@ -42,7 +42,7 @@ const ProjectModal = ({ closeModal }) => {
         </p>
       </div>
       <div className='flex justify-center items-center mt-4 w-full px-4'>
-        <button className='text-base font-medium text-center leading-none text-white py-4 lg:w-full md:w-full w-full bg-gray-800 hover:bg-gray-700 transition duration-300 ease-in-out'>
+        <button className='text-base font-medium text-center leading-none text-black py-4 lg:w-full md:w-full w-full bg-gray-800 hover:bg-gray-700 transition duration-300 ease-in-out'>
           View More
         </button>
       </div>

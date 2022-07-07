@@ -8,8 +8,8 @@
 }
 body {
   font-family: 'Space Grotesk', sans-serif;
-  background-color: #011214;
-  color: #fff;
+  /* background-color: #011214; */
+  color: #000 !important;
   font-smooth: antialiased;
   scroll-behavior: smooth;
 }

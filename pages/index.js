@@ -16,10 +16,10 @@ export default function Home() {
       <Section id='about'>
         <About />
       </Section>
-      <Section id='work'>
+      {/* <Section id='work'>
         <PastExperience />
         <SkillsGrid />
-      </Section>{' '}
+      </Section>{' '} */}
       <Section id='projects'>
         <Projects />
       </Section>{' '}
