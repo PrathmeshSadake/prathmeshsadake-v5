@@ -72,7 +72,7 @@ export default function IndexPage() {
           <div className='h-full hidden xl:flex items-center justify-end'>
             <button className='sm:w-auto w-full text-xs justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:outline-none hover:bg-gray-300 font-semibold leading-none text-primary py-2 px-3 bg-white flex items-center transition-colors'>
               <a
-                href='https://drive.google.com/file/d/1Tpabb4ja52JgVvdcbdw8N-Jd2ZDx-3Pd/view?usp=sharing'
+                href='https://drive.google.com/file/d/1M_UiFPGf8zJlg4B8qv4B9AI76EWFMPIS/view?usp=sharing'
                 target='_blank'
                 rel='noreferrer'
                 noopener
