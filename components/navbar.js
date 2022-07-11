@@ -13,7 +13,7 @@ export default function IndexPage() {
   const router = useRouter();
 
   return (
-    <div className='h-full w-full'>
+    <div className='h-full w-full' id='navbar'>
       {/* Code block starts */}
       <nav className='w-full bg-transparent hidden xl:block'>
         <div className='container px-6 h-16 flex justify-between items-center lg:items-stretch mx-auto'>
@@ -69,47 +69,45 @@ export default function IndexPage() {
               </Link>
             )}
           </div>
-          <div className='h-full hidden xl:flex items-center justify-end'>
-            <button className='sm:w-auto w-full text-xs justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:outline-none hover:bg-gray-300 font-semibold leading-none text-primary py-2 px-3 bg-white flex items-center transition-colors'>
-              <a
-                href='https://drive.google.com/file/d/1M_UiFPGf8zJlg4B8qv4B9AI76EWFMPIS/view?usp=sharing'
-                target='_blank'
-                rel='noreferrer'
-                noopener
-              >
-                Resume
-              </a>
-              <div className='ml-2 mt-0.5'>
-                <svg
-                  className='fill-stroke'
-                  width='16'
-                  height='16'
-                  viewBox='0 0 16 16'
-                  fill='none'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path
-                    d='M3.33325 8H12.6666'
-                    stroke='#0BA358'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                  />
-                  <path
-                    d='M10 10.6667L12.6667 8'
-                    stroke='#0BA358'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                  />
-                  <path
-                    d='M10 5.33301L12.6667 7.99967'
-                    stroke='#0BA358'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
+          {router.pathname !== '/resume' && (
+            <div className='h-full hidden xl:flex items-center justify-end'>
+              <Link href={'/resume'}>
+                <a className='sm:w-auto w-full text-xs justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:outline-none hover:bg-gray-300 font-semibold leading-none text-primary py-2 px-3 bg-white flex items-center transition-colors'>
+                  {' '}
+                  Resume
+                  <div className='ml-2 mt-0.5'>
+                    <svg
+                      className='fill-stroke'
+                      width='16'
+                      height='16'
+                      viewBox='0 0 16 16'
+                      fill='none'
+                      xmlns='http://www.w3.org/2000/svg'
+                    >
+                      <path
+                        d='M3.33325 8H12.6666'
+                        stroke='#0BA358'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                      />
+                      <path
+                        d='M10 10.6667L12.6667 8'
+                        stroke='#0BA358'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                      />
+                      <path
+                        d='M10 5.33301L12.6667 7.99967'
+                        stroke='#0BA358'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </Link>
+            </div>
+          )}
           <div className='flex items-center xl:hidden'>
             <ul className='p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-16 md:mt-16 hidden'>
               <li className='flex md:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-secondary focus:text-secondary focus:outline-none'>

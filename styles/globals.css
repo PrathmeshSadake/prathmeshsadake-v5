@@ -13,3 +13,8 @@ body {
   font-smooth: antialiased;
   scroll-behavior: smooth;
 }
+
+.react-pdf__Page__canvas {
+  margin: 0 auto !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.098), 0 6px 20px 0 rgba(0, 0, 0, 0.121);
+}

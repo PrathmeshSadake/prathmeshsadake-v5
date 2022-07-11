@@ -2,7 +2,7 @@ import Script from 'next/script';
 import Layout from '../components/layout';
 import '../styles/globals.css';
 import AOS from 'aos';
-import React from 'react'
+import React from 'react';
 
 import 'aos/dist/aos.css';
 

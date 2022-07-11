@@ -41,7 +41,7 @@ const Projects = () => {
       >
         <ProjectModal closeModal={closeModal} />
       </Modal>
-      <div className='flex justify-center items-center bg-white py-14'>
+      <div className='flex justify-center items-center bg-white py-14 px-3 md:px-8 lg:px-0'>
         <div className='container mx-auto'>
           <p
             className='
@@ -69,7 +69,7 @@ const Projects = () => {
           >
             Projects I have Worked on
           </h1>
-          <div className='grid grid-cols-2 gap-8 p-6 bg-pink-50 mb-4'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 p-6 bg-pink-50 mb-4'>
             <div className='w-full overflow-hidden' style={{ height: '400px' }}>
               <img
                 src='https://source.unsplash.com/QQhAQHWvTYk'
@@ -133,7 +133,7 @@ const Projects = () => {
               </button>
             </div>
           </div>
-          <div className='grid grid-cols-3 gap-4'>
+          <div className='grid grid-cols-1 lg:grid-cols-3 gap-4'>
             <div className='p-6 bg-teal-50'>
               <div
                 className='w-full overflow-hidden'
