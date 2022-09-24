@@ -279,10 +279,9 @@ export default function Home({ articles }) {
 }
 
 export async function getStaticProps() {
-  if (process.env.NODE_ENV === 'production') {
-    // await generateRssFeed()
-  }
-
+  // if (process.env.NODE_ENV === 'production') {
+  //   // await generateRssFeed()
+  // }
   return {
     props: {
       articles: [],
