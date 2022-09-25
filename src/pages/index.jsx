@@ -21,6 +21,8 @@ import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
+import companyPlaceHolder from '@/images/logos/companyPlaceHolder.svg'
+
 import { formatDate } from '@/lib/formatDate'
 
 function MailIcon(props) {
@@ -89,7 +91,7 @@ function Article({ article }) {
         {article.title}
       </Card.Title>
       <Card.Eyebrow as="time" dateTime={article.date} decorate>
-        {formatDate(article.date)}
+        {article.date}
       </Card.Eyebrow>
       <Card.Description>{article.description}</Card.Description>
       <Card.Cta>Read article</Card.Cta>
@@ -99,7 +101,12 @@ function Article({ article }) {
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
-    <Link className="group -m-1 p-1" {...props}>
+    <Link
+      className="group -m-1 p-1"
+      {...props}
+      target={'_blank'}
+      rel="noopener noreferrer"
+    >
       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
   )
@@ -145,22 +152,22 @@ function Resume() {
     },
     {
       company: 'Docsup Private Limited',
-      title: 'MERN Stack Developer',
-      logo: logoAirbnb,
+      title: 'MERN Stack Development Intern',
+      logo: logoPlanetaria,
       start: 'Jan 2022',
       end: 'Feb 2022',
     },
     {
       company: 'Techsnap',
-      title: 'Frontend Developer',
-      logo: logoFacebook,
+      title: 'Frontend Development Intern',
+      logo: logoPlanetaria,
       start: 'Jan 2022',
       end: 'Jan 2022',
     },
     {
       company: 'Arca Innovation',
       title: 'Web Software Developement Intern',
-      logo: logoStarbucks,
+      logo: logoPlanetaria,
       start: 'Mar 2021',
       end: 'Apr 2021',
     },
@@ -239,22 +246,22 @@ export default function Home({ articles }) {
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com"
+              href="https://twitter.com/prathmeshsadake"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
             <SocialLink
-              href="https://instagram.com"
+              href="https://instagram.com/prxthmesharchive"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/prathmeshsadake"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://linkedin.co/in/prathmeshsadake"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
@@ -279,12 +286,17 @@ export default function Home({ articles }) {
 }
 
 export async function getStaticProps() {
-  // if (process.env.NODE_ENV === 'production') {
-  //   // await generateRssFeed()
-  // }
   return {
     props: {
-      articles: [],
+      articles: [
+        {
+          title: 'Things I wish I knew before I got to know them',
+          slug: 'things-i-wish-i-knew-before-i-got-to-know-them',
+          date: 'October 1, 2022',
+          description:
+            'In this article, I’ll be sharing with you few things I wish I knew earlier that would have made me happier, more successful, and more well-rounded individuals.',
+        },
+      ],
     },
   }
 }

@@ -7,7 +7,7 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 function ToolsSection({ children, ...props }) {
   return (
     <Section {...props}>
-      <ul role="list" className="space-y-16">
+      <ul role="list" className="space-y-8">
         {children}
       </ul>
     </Section>
@@ -85,9 +85,18 @@ export default function Uses() {
               Notion is a minimal project management and note-taking software
               platform. Writing, planing &amp; getting organized in one place.
             </Tool>
+            <Tool title="Any.do">
+              An award-winning app used by millions of people to stay organized
+              and get more done. Helps me to organize tasks, lists and reminders
+              and also syncs seamlessly across all my devices.
+            </Tool>
             <Tool title="Forest">
               Simple tool for blocking distracting apps when I need to just do
               the work and get some momentum going.
+            </Tool>
+            <Tool title="Sleep Town">
+              Simple tool for building healthy sleep habits. Helps to maintain
+              healthy sleeping hours every day
             </Tool>
           </ToolsSection>
         </div>

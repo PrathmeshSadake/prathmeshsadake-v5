@@ -1,25 +1,71 @@
+import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import Head from 'next/head'
 import React from 'react'
+
+const articles = [
+  {
+    title: 'Things I wish I knew before I got to know them',
+    slug: 'things-i-wish-i-knew-before-i-got-to-know-them',
+    date: 'October 1, 2022',
+    description:
+      'Most of the important things in the world have been accomplished by people who have kept on trying when there seemed to be no hope at all. In this article, I’ll be sharing with you few things I wish I knew earlier. These are things that would have made us happier, more successful, and more well-rounded individuals.',
+  },
+]
+
+function Article({ article }) {
+  return (
+    <article className="md:grid md:grid-cols-4 md:items-baseline">
+      <Card className="md:col-span-3">
+        <Card.Title href={`/articles/${article.slug}`}>
+          {article.title}
+        </Card.Title>
+        <Card.Eyebrow
+          as="time"
+          dateTime={article.date}
+          className="md:hidden"
+          decorate
+        >
+          {article.date}
+        </Card.Eyebrow>
+        <Card.Description>{article.description}</Card.Description>
+        <Card.Cta>Read article</Card.Cta>
+      </Card>
+      <Card.Eyebrow
+        as="time"
+        dateTime={article.date}
+        className="mt-1 hidden md:block"
+      >
+        {article.date}
+      </Card.Eyebrow>
+    </article>
+  )
+}
 
 const Articles = () => {
   return (
-    <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
-    >
-      <div className="max-w-2xl">
-        <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          Software designer, founder, and amateur astronaut.
-        </h1>
-        <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I’m Spencer, a software designer and entrepreneur based in New York
-          City. I’m the founder and CEO of Planetaria, where we develop
-          technologies that empower regular people to explore space on their own
-          terms.
-        </p>
-      </div>
-    </SimpleLayout>
+    <>
+      <Head>
+        <title>Articles - Prathmesh Sadake</title>
+        <meta
+          name="description"
+          content="All of my long-form thoughts on programming, productivity, mindfulness, life-lessons, and more."
+        />
+      </Head>
+      <SimpleLayout
+        title="Writing on Machine Learning, and Life Lessons"
+        intro="All of my long-form thoughts on programming, productivity, mindfulness, life-lessons, and more."
+      >
+        <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+          <div className="flex max-w-3xl flex-col space-y-16">
+            {articles.map((article) => (
+              <Article article={article} />
+            ))}
+          </div>
+        </div>
+      </SimpleLayout>
+    </>
   )
 }
 
