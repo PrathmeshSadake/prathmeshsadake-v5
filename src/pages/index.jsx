@@ -144,6 +144,13 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
+      company: 'Ensemble Inc',
+      title: 'Product Engineer',
+      logo: logoPlanetaria,
+      start: 'Oct 2022',
+      end: 'Present',
+    },
+    {
       company: 'TCS iON',
       title: 'Project Intern',
       logo: logoPlanetaria,
@@ -156,13 +163,6 @@ function Resume() {
       logo: logoPlanetaria,
       start: 'Jan 2022',
       end: 'Feb 2022',
-    },
-    {
-      company: 'Techsnap',
-      title: 'Frontend Development Intern',
-      logo: logoPlanetaria,
-      start: 'Jan 2022',
-      end: 'Jan 2022',
     },
     {
       company: 'Arca Innovation',
@@ -225,9 +225,7 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>
-          Prathmesh Sadake - Machine Learning Engineer, MERN Stack Developer
-        </title>
+        <title>Prathmesh Sadake - Software Development Engineer (SDE)</title>
         <meta
           name="description"
           content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
@@ -236,13 +234,13 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Machine Learning Engineer, MERN Stack Developer
+            Software Development Engineer (SDE)
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Prathmesh, a Machine Learning Engineer and a MERN Stack
-            Developer based in Navi Mumbai. I am a collaborative person but
-            sometimes I get nervous and self-conscious in social situations.
-            Also I enjoy making people around me laugh.
+            I’m Prathmesh, a Software Development Engineer based in Navi Mumbai.
+            I am a collaborative person but sometimes I get nervous and
+            self-conscious in social situations. Also I enjoy making people
+            around me laugh.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

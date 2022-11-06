@@ -65,23 +65,50 @@ export default function About() {
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               I’m Prathmesh Sadake.
             </h1>
-            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+            <div className="mt-6 space-y-4 text-base text-zinc-600 dark:text-zinc-300">
               <p>
-                I have worked hands-on with some of the most popular Python
-                libraries, including pandas, NumPy, Matplotlib, and many more. I
-                have worked with real-world datasets to learn the statistical
-                and machine learning techniques I need to perform hypothesis
-                testing and build predictive models.
+                Power-packed with the strengths of data structures and
+                algorithms. I can perform modifications in various software,
+                according to client requirements, by applying the principles of
+                computer science, with the goal of optimising an application for
+                better performance delivery.
               </p>
               <p>
-                I know how to process data for features, train models, assess
-                performance, and tune parameters for better performance.
+                I can create client-facing apps and websites with cutting-edge
+                back-end support. I have worked with modern tools including
+                Next.js, React.js, MongoDB, Node, Express.js, Firebase and
+                Postman. I usually use the MERN stack, but I'm flexible enough
+                to utilize whatever tools are required.
               </p>
               <p>
-                I can also create client-facing apps and websites with
-                cutting-edge back-end support. I usually use the MERN stack, but
-                I'm flexible enough to utilize whatever tools are required.
+                I am currently working at{' '}
+                <span className="font-medium text-teal-400">Ensemble Inc</span>{' '}
+                as a{' '}
+                <span className="font-medium text-teal-400">
+                  Product Engineer
+                </span>{' '}
+                where my responsibilities includes:
               </p>
+              <ul className="list-inside list-disc">
+                <li>Researching, designing, and managing software programs</li>
+                <li>Testing and evaluating new programs</li>
+                <li>
+                  Modifying software to fix errors, and improve its performance
+                </li>
+                <li>Deploying software tools, processes, and metrics</li>
+                <li>
+                  Directing software programming and documentation development.
+                </li>
+                <li>
+                  Preparing reports on programming project specifications,
+                  activities, or status.
+                </li>
+                <li>
+                  Consulting with engineering staff to evaluate
+                  software-hardware interfaces and develop specifications and
+                  performance requirements.
+                </li>
+              </ul>
               <p>
                 I am a collaborative person but sometimes I get nervous and
                 self-conscious in social situations. Also I enjoy making people

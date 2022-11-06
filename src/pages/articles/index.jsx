@@ -54,8 +54,8 @@ const Articles = () => {
         />
       </Head>
       <SimpleLayout
-        title="Writing on Machine Learning, and Life Lessons"
-        intro="All of my long-form thoughts on programming, productivity, mindfulness, life-lessons, and more."
+        title="Writing on Productivity and Life Lessons"
+        intro="All of my long-form thoughts on productivity, mindfulness, life-lessons, and more."
       >
         <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
           <div className="flex max-w-3xl flex-col space-y-16">
