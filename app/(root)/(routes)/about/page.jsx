@@ -1,4 +1,4 @@
-import React, { JSX, SVGProps } from "react";
+import React from "react";
 import Link from "next/link";
 import clsx from "clsx";
 
@@ -12,19 +12,7 @@ import {
 import { Container } from "@/components/Container";
 const portraitImage = "/images/portrait.jpg";
 
-interface SocialLinkProps {
-  className?: string;
-  href: string;
-  children: any;
-  icon: any;
-}
-
-const SocialLink: React.FC<SocialLinkProps> = ({
-  className,
-  href,
-  children,
-  icon: Icon,
-}) => {
+const SocialLink = ({ className, href, children, icon: Icon }) => {
   return (
     <li className={clsx(className, "flex")}>
       <Link
@@ -40,7 +28,7 @@ const SocialLink: React.FC<SocialLinkProps> = ({
   );
 };
 
-function MailIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
+function MailIcon(props) {
   return (
     <svg viewBox='0 0 24 24' aria-hidden='true' {...props}>
       <path

@@ -1,18 +1,9 @@
-import Head from "next/head";
-
+import React from "react";
 import { Card } from "@/components/Card";
 import { Section } from "@/components/Section";
 import { SimpleLayout } from "@/components/SimpleLayout";
-import React from "react";
 
-function ToolsSection({
-  children,
-  title,
-  ...props
-}: {
-  children: React.ReactNode;
-  title: string;
-}) {
+function ToolsSection({ children, title, ...props }) {
   return (
     <Section title={title} {...props}>
       <ul role='list' className='space-y-8'>
@@ -22,15 +13,7 @@ function ToolsSection({
   );
 }
 
-function Tool({
-  title,
-  href,
-  children,
-}: {
-  title: string;
-  href?: any;
-  children: React.ReactNode;
-}) {
+function Tool({ title, href, children }) {
   return (
     <Card as='li'>
       <Card.Title as='h3' href={href}>

@@ -37,7 +37,7 @@ const projects = [
   },
 ];
 
-function LinkIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
+function LinkIcon(props) {
   return (
     <svg viewBox='0 0 24 24' aria-hidden='true' {...props}>
       <path
