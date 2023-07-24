@@ -23,7 +23,7 @@ export function Card({
   children,
 }: {
   as?: any;
-  className: string;
+  className?: string;
   children: React.ReactNode;
 }) {
   return (
@@ -38,10 +38,14 @@ export function Card({
 Card.Link = function CardLink({
   children,
   href,
+  target,
+  rel,
   ...props
 }: {
   children: any;
   href: string;
+  target?: string;
+  rel?: string;
 }) {
   return (
     <>

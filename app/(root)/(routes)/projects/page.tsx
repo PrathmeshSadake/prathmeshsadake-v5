@@ -7,17 +7,33 @@ import { JSX, SVGProps } from "react";
 
 const projects = [
   {
-    name: "Planetaria",
+    name: "Genius",
     description:
-      "Creating technology to empower civilians to explore space on their own terms.",
-    link: { href: "http://planetaria.tech", label: "planetaria.tech" },
+      "AI tool for photo, content and code generation with paid subscriptions and free trials. Clerk Authentication for user management.",
+    link: {
+      href: "https://genius-prathmeshsadake.vercel.app",
+      label: "genius",
+    },
     logo: "/images/logos/planetaria.svg",
   },
   {
-    name: "Planetaria",
+    name: "Safari Wall",
     description:
-      "Creating technology to empower civilians to explore space on their own terms.",
-    link: { href: "http://planetaria.tech", label: "planetaria.tech" },
+      "App allows users to post, reply, follow, and receive notifications for liked or commented content on their profile page or feed.",
+    link: {
+      href: "http://safariwall-prathmeshsadake.vercel.app",
+      label: "safariwall",
+    },
+    logo: "/images/logos/planetaria.svg",
+  },
+  {
+    name: "Twittergram",
+    description:
+      "App allows users to post, reply, follow, and receive notifications for liked or commented content on their profile page or feed.",
+    link: {
+      href: "http://twittergram.vercel.app",
+      label: "twittergram",
+    },
     logo: "/images/logos/planetaria.svg",
   },
 ];
@@ -47,52 +63,46 @@ export default function Projects() {
         title='Things I’ve made trying to put my dent in the universe.'
         intro='I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of.'
       >
-        {projects.length > 0 ? (
-          <ul
-            role='list'
-            className='grid grid-cols-1 gap-16 sm:grid-cols-2 lg:grid-cols-3'
-          >
-            {projects.map((project) => (
-              <Card as='li' key={project.name}>
-                <div className='relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0'>
-                  <img
-                    src={project.logo}
-                    alt=''
-                    className='h-8 w-8'
-                    unoptimized
-                  />
-                </div>
-                <h2 className='mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100'>
-                  <Card.Link href={project.link.href}>{project.name}</Card.Link>
-                </h2>
-                <Card.Description>{project.description}</Card.Description>
-                <p className='relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200'>
-                  <LinkIcon className='h-6 w-6 flex-none' />
-                  <span className='ml-2'>{project.link.label}</span>
-                </p>
-              </Card>
-            ))}
-          </ul>
-        ) : (
-          <div className='max-w-2xl'>
-            <h1 className='text-xl font-semibold text-zinc-800 dark:text-zinc-300'>
-              This website is currently under development and projects will soon
-              be listed here. Until then you can watch Friends or Brooklyn
-              Nine-Nine on Netflix.
-            </h1>
-            <p className='mt-6 text-base text-zinc-600 dark:text-zinc-400'>
-              Alternatively you can view my projects on{" "}
-              <a
-                className='text-emerald-300 underline'
-                target={"_blank"}
-                rel='noopener noreferrer'
-                href='https://github.com/PrathmeshSadake'
-              >
-                GitHub
-              </a>
-            </p>
-          </div>
-        )}
+        <ul
+          role='list'
+          className='grid grid-cols-1 gap-16 sm:grid-cols-2 lg:grid-cols-3'
+        >
+          {projects.map((project) => (
+            <Card as='li' key={project.name}>
+              <div className='relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0'>
+                <img src={project.logo} alt='' className='h-8 w-8' />
+              </div>
+              <h2 className='mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100'>
+                <Card.Link
+                  href={project.link.href}
+                  target='_blank'
+                  rel='noreferrer noopener'
+                >
+                  {project.name}
+                </Card.Link>
+              </h2>
+              <Card.Description>{project.description}</Card.Description>
+              <p className='relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200'>
+                <LinkIcon className='h-6 w-6 flex-none' />
+                <span className='ml-2'>{project.link.label}</span>
+              </p>
+            </Card>
+          ))}
+        </ul>
+
+        <div className='max-w-2xl mt-24'>
+          <p className='mt-6 text-base text-zinc-600 dark:text-zinc-400'>
+            Alternatively you can view my projects on{" "}
+            <a
+              className='text-emerald-300'
+              target={"_blank"}
+              rel='noopener noreferrer'
+              href='https://github.com/PrathmeshSadake'
+            >
+              GitHub
+            </a>
+          </p>
+        </div>
       </SimpleLayout>
     </>
   );
