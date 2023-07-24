@@ -1,11 +1,10 @@
-import Image from "next/image";
 import Head from "next/head";
 
 import { Card } from "@/components/Card";
 import { SimpleLayout } from "@/components/SimpleLayout";
 import { JSX, SVGProps } from "react";
 
-export const projects = [
+const projects = [
   {
     name: "Genius",
     description:
