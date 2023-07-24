@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { Container } from "@/components/Container";
 
-function NavLink({ href, children }: { href: string; children: any }) {
+function NavLink({ href, children }) {
   return (
     <Link
       href={href}
