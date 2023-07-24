@@ -5,7 +5,7 @@ import { Card } from "@/components/Card";
 import { SimpleLayout } from "@/components/SimpleLayout";
 import { JSX, SVGProps } from "react";
 
-const projects = [
+export const projects = [
   {
     name: "Genius",
     description:

@@ -1,20 +1,16 @@
 import Head from "next/head";
 import Link from "next/link";
-import { Card } from "@/components/Card";
-import { Container } from "@/components/Container";
 import {
   TwitterIcon,
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
 } from "@/components/SocialIcons";
-import { JSX, SVGProps } from "react";
-import { Key } from "react";
-import Photos from "@/components/Photos";
 
-function BriefcaseIcon(
-  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
-) {
+import Photos from "@/components/Photos";
+import { Container } from "@/components/Container";
+
+function BriefcaseIcon(props) {
   return (
     <svg
       viewBox='0 0 24 24'
@@ -37,44 +33,7 @@ function BriefcaseIcon(
   );
 }
 
-function ArrowDownIcon(
-  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
-) {
-  return (
-    <svg viewBox='0 0 16 16' fill='none' aria-hidden='true' {...props}>
-      <path
-        d='M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5'
-        strokeWidth='1.5'
-        strokeLinecap='round'
-        strokeLinejoin='round'
-      />
-    </svg>
-  );
-}
-
-function Article({ article }: { article: any }) {
-  return (
-    <div className='rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40'>
-      <Card.Title href={`/articles/${article.slug}`}>
-        {article.title}
-      </Card.Title>
-      <Card.Eyebrow as='time' dateTime={article.date} decorate>
-        {article.date}
-      </Card.Eyebrow>
-      <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
-    </div>
-  );
-}
-
-function SocialLink({
-  icon: Icon,
-  href,
-  ...props
-}: {
-  icon: any;
-  href: string;
-}) {
+function SocialLink({ icon: Icon, href, ...props }) {
   return (
     <Link
       className='group -m-1 p-1'
@@ -169,15 +128,6 @@ function Resume() {
 }
 
 export default function Home() {
-  const articles = [
-    {
-      title: "Things I wish I knew before I got to know them",
-      slug: "things-i-wish-i-knew-before-i-got-to-know-them",
-      date: "October 1, 2022",
-      description:
-        "In this article, I’ll be sharing with you few things I wish I knew earlier that would have made me happier, more successful, and more well-rounded individuals.",
-    },
-  ];
   return (
     <>
       <Head>
@@ -223,18 +173,6 @@ export default function Home() {
         </div>
       </Container>
       <Photos />
-      <Container className='mt-24 md:mt-28'>
-        <div className='mx-auto grid max-w-2xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2'>
-          <div className='flex flex-col gap-y-16'>
-            {articles.map((article: { slug: Key | null | undefined }) => (
-              <Article key={article.slug} article={article} />
-            ))}
-          </div>
-          <div className='space-y-10 lg:pl-16 xl:pl-24'>
-            <Resume />
-          </div>
-        </div>
-      </Container>
     </>
   );
 }

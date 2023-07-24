@@ -14,12 +14,11 @@ import {
   useEffect,
   useRef,
 } from "react";
-import { useTheme } from "next-themes";
 import ToggleMode from "./ToggleMode";
 
 const avatarImage = "/images/avatar.jpg";
 
-function CloseIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
+function CloseIcon(props) {
   return (
     <svg viewBox='0 0 24 24' aria-hidden='true' {...props}>
       <path
@@ -34,9 +33,7 @@ function CloseIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   );
 }
 
-function ChevronDownIcon(
-  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
-) {
+function ChevronDownIcon(props) {
   return (
     <svg viewBox='0 0 8 6' aria-hidden='true' {...props}>
       <path
@@ -138,11 +135,7 @@ function NavItem({ href, children }) {
   );
 }
 
-function DesktopNavigation(
-  props: JSX.IntrinsicAttributes &
-    ClassAttributes<HTMLElement> &
-    HTMLAttributes<HTMLElement>
-) {
+function DesktopNavigation(props) {
   return (
     <nav {...props}>
       <ul className='flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10'>
@@ -154,7 +147,7 @@ function DesktopNavigation(
   );
 }
 
-function clamp(number: number, a: number, b: number) {
+function clamp(number, a, b) {
   let min = Math.min(a, b);
   let max = Math.max(a, b);
   return Math.min(Math.max(number, min), max);
@@ -188,7 +181,6 @@ function Avatar({ large = false, className, ...props }) {
           "rounded-full bg-zinc-100 object-cover dark:bg-zinc-800",
           large ? "h-16 w-16" : "h-9 w-9"
         )}
-        priority
       />
     </Link>
   );
@@ -206,7 +198,7 @@ export function Header() {
     let downDelay = avatarRef.current?.offsetTop ?? 0;
     let upDelay = 64;
 
-    function setProperty(property: string, value: string | number | null) {
+    function setProperty(property, value) {
       document.documentElement.style.setProperty(property, value);
     }
 
