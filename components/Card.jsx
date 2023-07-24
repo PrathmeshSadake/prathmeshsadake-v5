@@ -1,10 +1,8 @@
-import React, { JSX, SVGProps } from "react";
+import React from "react";
 import Link from "next/link";
 import clsx from "clsx";
 
-function ChevronRightIcon(
-  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
-) {
+function ChevronRightIcon(props) {
   return (
     <svg viewBox='0 0 16 16' fill='none' aria-hidden='true' {...props}>
       <path
@@ -17,15 +15,7 @@ function ChevronRightIcon(
   );
 }
 
-export function Card({
-  as: Component = "div",
-  className,
-  children,
-}: {
-  as?: any;
-  className?: string;
-  children: React.ReactNode;
-}) {
+export function Card({ as: Component = "div", className, children }) {
   return (
     <Component
       className={clsx(className, "group relative flex flex-col items-start")}
@@ -35,18 +25,7 @@ export function Card({
   );
 }
 
-Card.Link = function CardLink({
-  children,
-  href,
-  target,
-  rel,
-  ...props
-}: {
-  children: any;
-  href: string;
-  target?: string;
-  rel?: string;
-}) {
+Card.Link = function CardLink({ children, href, target, rel, ...props }) {
   return (
     <>
       <div className='absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl' />
@@ -58,15 +37,7 @@ Card.Link = function CardLink({
   );
 };
 
-Card.Title = function CardTitle({
-  as: Component = "h2",
-  href,
-  children,
-}: {
-  as?: any;
-  children: any;
-  href: string;
-}) {
+Card.Title = function CardTitle({ as: Component = "h2", href, children }) {
   return (
     <Component className='text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100'>
       {href ? <Card.Link href={href}>{children}</Card.Link> : children}
@@ -74,7 +45,7 @@ Card.Title = function CardTitle({
   );
 };
 
-Card.Description = function CardDescription({ children }: { children: any }) {
+Card.Description = function CardDescription({ children }) {
   return (
     <p className='relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400'>
       {children}
@@ -82,7 +53,7 @@ Card.Description = function CardDescription({ children }: { children: any }) {
   );
 };
 
-Card.Cta = function CardCta({ children }: { children: any }) {
+Card.Cta = function CardCta({ children }) {
   return (
     <div
       aria-hidden='true'
@@ -101,12 +72,6 @@ Card.Eyebrow = function CardEyebrow({
   children,
   dateTime,
   ...props
-}: {
-  as: any;
-  children: any;
-  decorate: boolean;
-  className?: string;
-  dateTime?: string;
 }) {
   return (
     <Component

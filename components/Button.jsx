@@ -1,16 +1,7 @@
 import Link from "next/link";
 import clsx from "clsx";
 
-export function Button({
-  variant,
-  className,
-  href,
-  ...props
-}: {
-  variant: any;
-  className: string;
-  href: string;
-}) {
+export function Button({ variant, className, href, ...props }) {
   className = clsx(
     "inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none",
     className,

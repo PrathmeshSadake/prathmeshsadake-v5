@@ -1,9 +1,8 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { SVGProps } from "react";
 
-function SunIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
+function SunIcon(props) {
   return (
     <svg
       viewBox='0 0 24 24'
@@ -22,7 +21,7 @@ function SunIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   );
 }
 
-function MoonIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
+function MoonIcon(props) {
   return (
     <svg viewBox='0 0 24 24' aria-hidden='true' {...props}>
       <path
@@ -36,12 +35,6 @@ function MoonIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
 }
 
 function ToggleMode() {
-  // function disableTransitionsTemporarily() {
-  //   document.documentElement.classList.add("[&_*]:!transition-none");
-  //   window.setTimeout(() => {
-  //     document.documentElement.classList.remove("[&_*]:!transition-none");
-  //   }, 0);
-  // }
   const { theme, setTheme } = useTheme();
 
   function toggleMode() {
