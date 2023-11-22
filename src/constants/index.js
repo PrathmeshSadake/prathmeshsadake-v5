@@ -210,10 +210,10 @@ export const projects = [
   {
     iconUrl: pricewise,
     theme: "btn-back-red",
-    name: "Amazon Price Tracker",
+    name: "Quill",
     description:
-      "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
-    link: "https://github.com/adrianhajdin/pricewise",
+      "Complete AI SaaS Platform with Next.js 13, React, Prisma, tRPC, Tailwind CSS enabling users to upload a PDF document and chat with AI assistant about the document.",
+    link: "https://github.com/prathmeshsadake/quill",
   },
   {
     iconUrl: threads,
