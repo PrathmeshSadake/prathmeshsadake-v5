@@ -59,7 +59,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .footer-container {
-    @apply flex flex-wrap gap-7 items-center justify-between;
+    @apply flex flex-wrap gap-7 items-center justify-between text-center;
   }
 
   .info-box {
