@@ -6,32 +6,32 @@ import { JSX, SVGProps } from "react";
 
 const projects = [
   {
-    name: "Genius",
+    name: "Quill",
     description:
-      "AI tool for photo, content and code generation with paid subscriptions and free trials. Clerk Authentication for user management.",
+      "Complete AI SaaS Platform with Next.js 13, React, Prisma, tRPC, Tailwind CSS enabling users to upload a PDF document and chat with AI assistant about the document.",
     link: {
-      href: "https://genius-prathmeshsadake.vercel.app",
-      label: "genius",
+      href: "https://github.com/PrathmeshSadake/quill",
+      label: "Quill",
     },
     logo: "/images/logos/planetaria.svg",
   },
   {
-    name: "Safari Wall",
+    name: "Scuttle",
     description:
-      "App allows users to post, reply, follow, and receive notifications for liked or commented content on their profile page or feed.",
+      "The marketplace offers a variety of high-quality digital assets across various categories, with features like admin verification for quality products.",
     link: {
-      href: "http://safariwall-prathmeshsadake.vercel.app",
-      label: "safariwall",
+      href: "https://github.com/PrathmeshSadake/scuttle",
+      label: "Scuttle",
     },
     logo: "/images/logos/planetaria.svg",
   },
   {
-    name: "Twittergram",
+    name: "Breadit",
     description:
-      "App allows users to post, reply, follow, and receive notifications for liked or commented content on their profile page or feed.",
+      "Full-Stack Ecommerce store made using MERN stack with admin panel for adding and deleting products. Stripe for handling payments and Cloudinary for Images.",
     link: {
-      href: "http://twittergram.vercel.app",
-      label: "twittergram",
+      href: "https://github.com/PrathmeshSadake/breadit",
+      label: "Breadit",
     },
     logo: "/images/logos/planetaria.svg",
   },
