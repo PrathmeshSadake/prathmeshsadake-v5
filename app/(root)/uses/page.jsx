@@ -64,30 +64,15 @@ export default function Uses() {
             managing my Git repositories.
           </Tool>
         </ToolsSection>
-        <ToolsSection title='Design'>
-          <Tool title='Figma'>
-            We started using Figma as just a design tool but now it’s become our
-            virtual whiteboard for the entire company. Never would have expected
-            the collaboration features to be the real hook.
-          </Tool>
-        </ToolsSection>
         <ToolsSection title='Productivity'>
           <Tool title='Notion'>
             Notion is a minimal project management and note-taking software
             platform. Writing, planing &amp; getting organized in one place.
           </Tool>
-          <Tool title='Any.do'>
+          <Tool title='Todoist'>
             An award-winning app used by millions of people to stay organized
             and get more done. Helps me to organize tasks, lists and reminders
             and also syncs seamlessly across all my devices.
-          </Tool>
-          <Tool title='Forest'>
-            Simple tool for blocking distracting apps when I need to just do the
-            work and get some momentum going.
-          </Tool>
-          <Tool title='Sleep Town'>
-            Simple tool for building healthy sleep habits. Helps to maintain
-            healthy sleeping hours every day
           </Tool>
         </ToolsSection>
       </div>

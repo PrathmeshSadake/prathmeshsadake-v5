@@ -10,6 +10,7 @@ import {
 } from "@/components/SocialIcons";
 
 import { Container } from "@/components/Container";
+
 const portraitImage = "/images/portrait.jpg";
 
 const SocialLink = ({ className, href, children, icon: Icon }) => {
@@ -71,40 +72,6 @@ export default function About() {
               Next.js, React.js, MongoDB, Node, Express.js, Firebase and
               Postman. I usually use the MERN stack, but I'm flexible enough to
               utilize whatever tools are required.
-            </p>
-            <p>
-              I am currently working at{" "}
-              <span className='font-medium text-teal-400'>Ensemble Inc</span> as
-              a{" "}
-              <span className='font-medium text-teal-400'>
-                Product Engineer
-              </span>{" "}
-              where my responsibilities includes:
-            </p>
-            <ul className='list-inside list-disc'>
-              <li>Researching, designing, and managing software programs</li>
-              <li>Testing and evaluating new programs</li>
-              <li>
-                Modifying software to fix errors, and improve its performance
-              </li>
-              <li>Deploying software tools, processes, and metrics</li>
-              <li>
-                Directing software programming and documentation development.
-              </li>
-              <li>
-                Preparing reports on programming project specifications,
-                activities, or status.
-              </li>
-              <li>
-                Consulting with engineering staff to evaluate software-hardware
-                interfaces and develop specifications and performance
-                requirements.
-              </li>
-            </ul>
-            <p>
-              I am a collaborative person but sometimes I get nervous and
-              self-conscious in social situations. Also I enjoy making people
-              around me laugh.
             </p>
           </div>
         </div>
