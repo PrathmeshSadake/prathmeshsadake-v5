@@ -35,8 +35,8 @@ const experienceData = [
     duration: "Oct 2023 - Dec 2023 · 3 mos",
     location: "Remote",
     responsibilities: [
-      "Responsible for writing reusable, testable, and efficient code.",
-      "Implemented user authentication and authorization systems using Supabase, including features like user registration, login, password reset, and role-based access control.",
+      "Implementing RESTful APIs for communication between the client and server.",
+      "Implemented user authentication and authorization systems using Firebase, including features like user registration, login, password reset, and role-based access control.",
       "Participated in code reviews to maintain code quality and learn from more experienced developers on the team.",
     ],
     skills: ["Firebase", "React.js", "CSS", "Node.js", "Express.js"],
@@ -51,6 +51,7 @@ const experienceData = [
     responsibilities: [
       "Designed and managed the database schema, created tables, defined relationships between data, and implemented CRUD operations for Intellify's application data.",
       "Implemented user authentication and authorization systems using Supabase, including features like user registration, login, password reset, and role-based access control.",
+      "Worked with content management systems like Sanity and Contentful to implemented blogs feature on website.",
       "Participated in code reviews to maintain code quality and learn from more experienced developers on the team.",
     ],
     skills: ["Supabase", "Next.js", "Tailwind CSS", "React.js"],
@@ -123,14 +124,14 @@ export default function WorkExperience() {
                 title={`${exp.position} (${exp.type})`}
                 subtitle={exp.duration}
               >
-                <ul className='list-inside list-disc'>
+                <ul className='w-full list-inside list-disc'>
                   {exp.responsibilities.map((i) => (
                     <li>{i}</li>
                   ))}
                 </ul>
-                <div className='flex space-x-2 mt-4'>
+                <div className='w-full flex flex-wrap mt-4 space-x-4'>
                   {exp.skills.map((i) => (
-                    <div className='rounded-full bg-white/90 px-3 text-sm font-medium text-teal-500 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-teal-400 dark:ring-white/10'>
+                    <div className='my-2 rounded-full bg-white/90 px-3 text-sm font-medium text-teal-500 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-teal-400 dark:ring-white/10'>
                       {i}
                     </div>
                   ))}
