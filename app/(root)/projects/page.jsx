@@ -26,6 +26,16 @@ const projects = [
     logo: "/images/logos/planetaria.svg",
   },
   {
+    name: "Evently",
+    description:
+      "A full stack event organization web app like Eventbrite or Meetup with authentication, event management, search, filtering, categories, checkout, and payments.",
+    link: {
+      href: "https://github.com/PrathmeshSadake/evently",
+      label: "Evently",
+    },
+    logo: "/images/logos/planetaria.svg",
+  },
+  {
     name: "Breadit",
     description:
       "Full-Stack Ecommerce store made using MERN stack with admin panel for adding and deleting products. Stripe for handling payments and Cloudinary for Images.",
