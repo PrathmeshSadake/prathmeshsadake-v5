@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import FloatingNav from "@/components/ui/floating-navbar";
+import Footer from "@/components/footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -19,7 +21,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <FloatingNav
+          // className='ml-auto right-4 md:right-6 lg:right-8'
+          navItems={[
+            { name: "Home", link: "/" },
+            { name: "About", link: "/about" },
+            // { name: "Contact", link: "/contact" },
+          ]}
+        />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

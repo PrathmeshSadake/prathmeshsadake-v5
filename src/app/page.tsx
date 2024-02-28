@@ -1,11 +1,6 @@
 import Projects from "@/components/projects";
 import Spotlight from "@/components/ui/spot-light";
-import {
-  IconBrandTwitter,
-  IconBrandGithub,
-  IconBrandInstagram,
-} from "@tabler/icons-react";
-import { Linkedin, Mail } from "lucide-react";
+
 
 const Home = () => {
   return (
@@ -30,7 +25,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='py-6 space-y-12'>
+      <div className='space-y-12'>
         <div>
           <h3 className='text-xl md:text-2xl font-semibold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50'>
             Things I&apos;ve made trying to put my dent in the universe.
@@ -41,14 +36,6 @@ const Home = () => {
           </p>
         </div>
         <Projects />
-
-        <div className='flex space-x-6 mx-auto max-w-fit'>
-          <Linkedin className='w-6 h-6 text-neutral-500 hover:text-neutral-200 cursor-pointer' />
-          <IconBrandGithub className='w-6 h-6 text-neutral-500 hover:text-neutral-200 cursor-pointer' />
-          <IconBrandInstagram className='w-6 h-6 text-neutral-500 hover:text-neutral-200 cursor-pointer' />
-          <Mail className='w-6 h-6 text-neutral-500 hover:text-neutral-200 cursor-pointer' />
-          <IconBrandTwitter className='w-6 h-6 text-neutral-500 hover:text-neutral-200 cursor-pointer' />
-        </div>
       </div>
     </div>
   );
