@@ -25,7 +25,7 @@ const Header: React.FunctionComponent = () => {
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
-          {"🌻"}
+          {"✨"}
         </motion.div>
       </motion.div>
       <div>
