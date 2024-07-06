@@ -69,7 +69,7 @@ const ExperienceItem: React.FunctionComponent<ExperienceItemProps> = ({
                 href={experienceOrg?.link}
                 target={"_blank"}
               >
-              {experienceOrg?.name} ({experienceOrg?.websiteDisplayName})
+                {experienceOrg?.name} ({experienceOrg?.websiteDisplayName})
               </LinkText>
             ) : (
               <span className='font-normal text-sm'>{experienceOrg?.name}</span>
@@ -116,4 +116,3 @@ const ExperienceItem: React.FunctionComponent<ExperienceItemProps> = ({
 };
 
 export default ExperienceSection;
-export type { ExperienceItemProps };
