@@ -12,7 +12,7 @@ const HeroSection: React.FunctionComponent = () => {
         <div className='about-content-wrapper leading-6 text-sm font-normal text-zinc-500 mt-4'>
           <p>
             {
-              "Hey! I am an engineer (designer, most of the times), learning how to build and design scalable websites and applications. My focus is to build with better user experience, design aesthetic, good developer experience and meaningful impact."
+              "Specializing in full-stack development (equipped with a robust foundation in data structures and algorithms), I possesses a wealth of experience in crafting cutting-edge client-facing applications and websites."
             }
           </p>
         </div>

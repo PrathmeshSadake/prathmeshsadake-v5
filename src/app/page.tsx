@@ -1,6 +1,5 @@
 import HeroSection from "@/components/hero";
 import ViewContainer from "@/components/view-container";
-import React from "react";
 
 const Home = () => {
   return (
