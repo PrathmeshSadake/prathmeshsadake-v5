@@ -1,4 +1,5 @@
 import HeroSection from "@/components/hero";
+import ExperienceSection from "@/components/experience";
 import ViewContainer from "@/components/view-container";
 
 const Home = () => {
@@ -8,8 +9,8 @@ const Home = () => {
       <div className='main-view-container'>
         <ViewContainer className='grid grid-cols-1 items-start justify-start gap-12'>
           <HeroSection />
-          {/* <ExperienceSection />
-          <ProjectSection />
+          <ExperienceSection />
+          {/* <ProjectSection />
           <ContactSection /> */}
         </ViewContainer>
       </div>
