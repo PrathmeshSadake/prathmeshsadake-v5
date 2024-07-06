@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
-import FloatingNav from "@/components/ui/floating-navbar";
-import Footer from "@/components/footer";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
+const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,18 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={poppins.className}>
-        <FloatingNav
-          // className='ml-auto right-4 md:right-6 lg:right-8'
-          navItems={[
-            { name: "Home", link: "/" },
-            { name: "About", link: "/about" },
-            // { name: "Contact", link: "/contact" },
-          ]}
-        />
-        {children}
-        <Footer />
-      </body>
+      <body className={outfit.className}>{children}</body>
     </html>
   );
 }
