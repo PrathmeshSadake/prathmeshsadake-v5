@@ -22,5 +22,12 @@ export const getContacts = function (): ContactItemProps[] {
         url: "https://linkedin.com/in/prathmeshsadake",
       },
     },
+    {
+      title: "Twitter / X.com",
+      link: {
+        display: "x.com/prathmeshsadake",
+        url: "https://x.com/prathmeshsadake",
+      },
+    },
   ];
 };

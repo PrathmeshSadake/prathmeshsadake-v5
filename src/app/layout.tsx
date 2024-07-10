@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar";
+
 import { cn } from "@/lib/utils";
+import Navbar from "@/components/navbar";
+import ContactSection from "@/components/contact";
+import ViewContainer from "@/components/view-container";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -24,8 +27,13 @@ export default function RootLayout({
           outfit.className
         )}
       >
-        {/* <Navbar /> */}
-        {children}
+        <div className='main-view-container'>
+          <ViewContainer className='grid grid-cols-1 items-start justify-start gap-12'>
+            <Navbar />
+            {children}
+            <ContactSection />
+          </ViewContainer>
+        </div>
       </body>
     </html>
   );

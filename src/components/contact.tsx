@@ -21,7 +21,7 @@ const ContactSection: React.FunctionComponent = () => {
       <h2 className='contact-heading leading-snug font-medium text-base text-zinc-900'>
         {"contact, socials."}
       </h2>
-      <Section className='project-item-list-wrapper mt-4 grid grid-cols-1 justify-start gap-4'>
+      <Section className='project-item-list-wrapper mt-4 grid grid-cols-1 justify-start gap-2'>
         {getContacts()?.map((contact, contactIndex) => (
           <ContactItem {...contact} key={contactIndex} />
         ))}
